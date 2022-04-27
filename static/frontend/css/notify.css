@@ -1,0 +1,466 @@
+.alert-heading {
+    color: inherit;
+}
+
+.alert-link {
+    font-weight: 600;
+}
+
+.alert-dismissible {
+    padding-right: 3.8125rem;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.9rem 1.25rem;
+    color: inherit;
+}
+
+.alert-secondary {
+    color: #f4f5f7;
+    background-color: #f6f7f8;
+    border-color: #f6f7f8;
+}
+
+.alert-secondary hr {
+    border-top-color: #e8eaed;
+}
+
+.alert-secondary .alert-link {
+    color: #d6dae2;
+}
+
+.alert-success {
+    color: #00f2c3;
+    background-color: #29f4cd;
+    border-color: #29f4cd;
+}
+
+.alert-success hr {
+    border-top-color: #11f3c7;
+}
+
+.alert-success .alert-link {
+    color: #00bf9a;
+}
+
+.alert-info {
+    color: #1d8cf8;
+    background-color: #419ef9;
+    border-color: #419ef9;
+}
+
+.alert-info hr {
+    border-top-color: #2891f8;
+}
+
+.alert-info .alert-link {
+    color: #0772db;
+}
+
+.alert-warning {
+    color: #ff8d72;
+    background-color: #ff9f89;
+    border-color: #ff9f89;
+}
+
+.alert-warning hr {
+    border-top-color: #ff8a70;
+}
+
+.alert-warning .alert-link {
+    color: #ff643f;
+}
+
+.alert-danger {
+    color: #fd5d93;
+    background-color: #fd77a4;
+    border-color: #fd77a4;
+}
+
+.alert-danger hr {
+    border-top-color: #fd5e93;
+}
+
+.alert-danger .alert-link {
+    color: #fc2b71;
+}
+
+.alert-light {
+    color: #adb5bd;
+    background-color: #bac1c8;
+    border-color: #bac1c8;
+}
+
+.alert-light hr {
+    border-top-color: #acb4bd;
+}
+
+.alert-light .alert-link {
+    color: #919ca6;
+}
+
+.alert-dark {
+    color: #212529;
+    background-color: #45484b;
+    border-color: #45484b;
+}
+
+.alert-dark hr {
+    border-top-color: #393b3e;
+}
+
+.alert-dark .alert-link {
+    color: #0a0c0d;
+}
+
+.alert-default {
+    color: #344675;
+    background-color: #54648b;
+    border-color: #54648b;
+}
+
+.alert-default hr {
+    border-top-color: #4a597b;
+}
+
+.alert-default .alert-link {
+    color: #243152;
+}
+
+.alert-white {
+    color: white;
+    background-color: white;
+    border-color: white;
+}
+
+
+.alert-white hr {
+    border-top-color: #f2f2f2;
+}
+
+.alert-white .alert-link {
+    color: #e6e6e6;
+}
+
+.alert-neutral {
+    color: white;
+    background-color: white;
+    border-color: white;
+}
+
+.alert-neutral hr {
+    border-top-color: #f2f2f2;
+}
+
+.alert-neutral .alert-link {
+    color: #e6e6e6;
+}
+
+.alert-darker {
+    color: black;
+    background-color: #292929;
+    border-color: #292929;
+}
+
+.alert-darker hr {
+    border-top-color: #1c1c1c;
+}
+
+.alert-darker .alert-link {
+    color: black;
+}
+
+.alert {
+    border: 0;
+    color: #ffffff;
+}
+
+.alert .alert-link {
+    color: #ffffff;
+}
+
+.alert.alert-success {
+    background-color: #00bf9a;
+}
+
+.alert i.fa,
+.alert i.tim-icons {
+    font-size: 1rem;
+}
+
+.alert .close {
+    color: #ffffff;
+    opacity: .9;
+    text-shadow: none;
+    line-height: 0;
+    outline: 0;
+}
+
+.alert span[data-notify="icon"] {
+    font-size: 22px;
+    display: block;
+    left: 19px;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.alert button.close {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -13px;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+}
+
+.alert .close ~ span {
+    display: block;
+    max-width: 89%;
+}
+
+.alert.alert-with-icon {
+    padding-left: 65px;
+}
+
+.alert-dismissible .close {
+    top: 50%;
+    right: 1.25rem;
+    padding: 0;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.alert-dismissible .close:hover,
+.alert-dismissible .close:focus {
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 1 !important;
+}
+
+@media (max-width: 575px) {
+    .alert-dismissible .close {
+        top: 1rem;
+        right: .5rem;
+    }
+}
+
+.alert-dismissible .close > span:not(.sr-only) {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.alert-dismissible .close:hover > span:not(.sr-only),
+.alert-dismissible .close:focus > span:not(.sr-only) {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.alert {
+    position: relative;
+    padding: 0.9rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.2857rem;
+}
+
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY {
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+}
+
+@-webkit-keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+}
