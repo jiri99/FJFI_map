@@ -57,7 +57,7 @@
   }
 
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     .sidebar {
       height: 100%;
       width: 0;
@@ -137,6 +137,28 @@
 
       color: #0327A8;
   }
+
+  .btn-menu {
+    width: 52px;
+    height: 52px;
+    font-size: 30px !important;
+    color: white !important;
+
+    background: #4870FF !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px !important;
+  }
+
+  .btn-category {
+    width: 280px !important;
+    height: 52px !important;
+    font-size: 30px !important;
+    color: white !important;
+
+    background: #4870FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 0px 0px 25px !important;
+  }
 </style>
 </head>
 <body>
@@ -149,30 +171,45 @@
     <a href="#" class="sixth">MFF</a>
   </div>
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-<script>
-  window.addEventListener('resize', function(event){
-      var newWidth = window.innerWidth;
-      if (newWidth > 500) {
-        displayNav();
-      }
-      else {
-        closeNav();
-      }
-  });
+  <div class="container">
+    <div class="row top-buffer">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-sm-offset-4 col-md-offset-4">
+          <div class="text-center">
+            <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-9">
+          <div class="text-right">
+            <button type="button" class="btn btn-category btn-square-md" onclick="openNav()">Kategorie</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
+  <script>
+    window.addEventListener('resize', function(event){
+        var newWidth = window.innerWidth;
+        if (newWidth > 767) {
+          displayNav();
+        }
+        else {
+          closeNav();
+        }
+    });
 
-  function displayNav() {
-    document.getElementById("mySidenav").style.width = "200px";
-  }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-</script>
-   
+    function displayNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+    
 </body>
 </html> 
