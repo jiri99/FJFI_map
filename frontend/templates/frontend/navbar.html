@@ -162,13 +162,15 @@
 </style>
 </head>
 <body>
-  <div id="mySidenav" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#" class="first">Trojanka</a>
-    <a href="#" class="second">Břehovka</a>
-    <a href="#" class="third">Děčín</a>
-    <a href="#" class="fourth">Trója</a>
-    <a href="#" class="sixth">MFF</a>
+  <div class="col-md-2 col-sm-2 col-xs-3 col-sm-offset-4 col-md-offset-4">
+    <div id="mySidenav" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        {% for building in object_list %}
+          <a class='btn btn-sm btn-primary'>
+            <td>{{ building.name }}</td>
+          </a>
+        {% endfor %}
+    </div>
   </div>
 
   <div class="container">
