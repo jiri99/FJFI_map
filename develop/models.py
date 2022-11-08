@@ -5,6 +5,9 @@ class Building(models.Model):
     name = models.TextField()
     address = models.TextField()
 
+    def __str__(self):
+         return self.name
+
     def building_get_all_rooms():
         print("Hello world!")
 
@@ -26,8 +29,17 @@ class Floor(models.Model):
     caption = models.CharField(max_length=2000)
     image = models.ImageField(upload_to='develop/db_images')
 
+    def __str__(self):
+        return self.name
+
     def floor_get_all_rooms():
         print("Hello world!")    
+
+class Room_type(models.Model):
+    name = models.TextField()
+
+    def __str__(self):
+        return self.name
 
 class Room(models.Model):
     floor = models.ForeignKey(
@@ -36,5 +48,11 @@ class Room(models.Model):
         verbose_name=('floor'),
         related_name='room_on_floor'
     )
+    room_type = models.ManyToManyField(Room_type)
     name = models.TextField()
     description = models.TextField()
+
+    def __str__(self):
+         return self.name
+
+
