@@ -29,9 +29,30 @@ def display_view(request, *args, **kwargs):
     print(context["object_floor"].image)
     return render(request, "frontend/display.html", context)
 
-def list_view(request, *args, **kwargs):
+def classes_view(request, *args, **kwargs):
     queryset = Room.objects.all()
     context = {
         "rooms": queryset
     }
-    return render(request, "frontend/list.html", context)
+    return render(request, "frontend/classes.html", context)
+
+def important_view(request, *args, **kwargs):
+    queryset = Room.objects.all()
+    context = {
+        "rooms": queryset
+    }
+    return render(request, "frontend/important.html", context)
+
+def others_view(request, *args, **kwargs):
+    queryset = Room.objects.all()
+    context = {
+        "rooms": queryset
+    }
+    return render(request, "frontend/others.html", context)
+
+def wc_view(request, *args, **kwargs):
+    queryset = Room.objects.all()
+    context = {
+        "rooms": queryset
+    }
+    return render(request, "frontend/wc.html", context)

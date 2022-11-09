@@ -17,14 +17,17 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from develop.views import home_view, homepage_view, display_view, list_view
+from develop.views import home_view, homepage_view, display_view, classes_view, important_view, others_view, wc_view
 
 urlpatterns = [
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('homepage/', homepage_view, name='homepage'),
     path('display/', display_view, name='display'),
-    path('list/', list_view, name='list'),
+    path('classes/', classes_view, name='classes'),
+    path('important/', important_view, name='classes'),
+    path('others/', others_view, name='others'),
+    path('wc/', wc_view, name='wc'),
 ]
 
 if settings.DEBUG:
