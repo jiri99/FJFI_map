@@ -28,3 +28,11 @@ def display_view(request, *args, **kwargs):
     }
     print(context["object_floor"].image)
     return render(request, "frontend/display.html", context)
+
+def list_view(request, *args, **kwargs):
+    queryset = Floor.objects.get(id=1)
+    context = {
+        "object_floor": queryset
+    }
+    print(context["object_floor"].image)
+    return render(request, "frontend/list.html", context)
