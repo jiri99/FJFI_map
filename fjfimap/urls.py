@@ -25,7 +25,7 @@ urlpatterns = [
     path('homepage/', homepage_view, name='homepage'),
     path('display/', display_view, name='display'),
     path('classes/', classes_view, name='classes'),
-    path('important/', important_view, name='classes'),
+    path('important/', important_view, name='important'),
     path('others/', others_view, name='others'),
     path('wc/', wc_view, name='wc'),
 ]

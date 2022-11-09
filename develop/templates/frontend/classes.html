@@ -104,7 +104,9 @@
     <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
         <div class="row top-buffer">
             <div class="col-md-2 col-sm-2 col-xs-2">
-                <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
+                <a href="{% url 'homepage' %}">
+                    <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
+                </a>
             </div>
             <div class="col-md-10 col-sm-10 col-xs-10">
                 <button type="button" class="btn btn-category btn-square-md">Učebny</button>
