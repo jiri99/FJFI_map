@@ -22,37 +22,36 @@ def homepage_view(request, *args, **kwargs):
     return render(request, "frontend/homepage.html", context)
 
 def display_view(request, *args, **kwargs):
-    queryset = Floor.objects.get(id=1)
+    queryset = Floor.objects.all()
     context = {
         "object_floor": queryset
     }
-    print(context["object_floor"].image)
     return render(request, "frontend/display.html", context)
 
 def classes_view(request, *args, **kwargs):
-    queryset = Room.objects.all()
+    queryset = Room.objects.filter(room_type__id = 2)
     context = {
         "rooms": queryset
     }
     return render(request, "frontend/classes.html", context)
 
 def important_view(request, *args, **kwargs):
-    queryset = Room.objects.all()
+    queryset = Room.objects.filter(room_type__id = 4)
     context = {
         "rooms": queryset
     }
     return render(request, "frontend/important.html", context)
 
-def others_view(request, *args, **kwargs):
-    queryset = Room.objects.all()
-    context = {
-        "rooms": queryset
-    }
-    return render(request, "frontend/others.html", context)
-
 def wc_view(request, *args, **kwargs):
-    queryset = Room.objects.all()
+    queryset = Room.objects.filter(room_type__id = 5)
     context = {
         "rooms": queryset
     }
     return render(request, "frontend/wc.html", context)
+
+def others_view(request, *args, **kwargs):
+    queryset = Room.objects.filter(room_type__id = 6)
+    context = {
+        "rooms": queryset
+    }
+    return render(request, "frontend/others.html", context)
