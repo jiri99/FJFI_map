@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import  reverse
 
 
 class Building(models.Model):
@@ -32,6 +33,9 @@ class Floor(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering=('name',)
+
     def floor_get_all_rooms():
         print("Hello world!")    
 
@@ -40,6 +44,7 @@ class Room_type(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Room(models.Model):
     floor = models.ForeignKey(
@@ -52,7 +57,10 @@ class Room(models.Model):
     name = models.TextField()
     description = models.TextField()
 
+    class Meta:
+        ordering=('name',)
+
     def __str__(self):
          return self.name
-
+         
 

@@ -1,6 +1,7 @@
 from multiprocessing import context
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.db.models import Q
 import sys
 sys.path.append('../')
 from develop.models import Building, Floor, Room
@@ -12,46 +13,75 @@ def home_view(request, *args, **kwargs):
     context = {
         "name": queryset
     }
-    return render(request, "frontend/home.html", context)
+    return render(request, "develop/home.html", context)
 
 def homepage_view(request, *args, **kwargs):
     queryset = Building.objects.all()
     context = {
         "object_building": queryset
     }
-    return render(request, "frontend/homepage.html", context)
+    return render(request, "develop/homepage.html", context)
 
 def display_view(request, *args, **kwargs):
-    queryset = Floor.objects.all()
+    queryset_floor = Floor.objects.all()
+    queryset_building = Building.objects.all()
     context = {
-        "object_floor": queryset
+        "object_floor": queryset_floor,
+        "object_building": queryset_building
     }
-    return render(request, "frontend/display.html", context)
+    return render(request, "develop/display.html", context)
 
 def classes_view(request, *args, **kwargs):
     queryset = Room.objects.filter(room_type__id = 2)
     context = {
         "rooms": queryset
     }
-    return render(request, "frontend/classes.html", context)
+    return render(request, "develop/classes.html", context)
 
 def important_view(request, *args, **kwargs):
     queryset = Room.objects.filter(room_type__id = 4)
     context = {
         "rooms": queryset
     }
-    return render(request, "frontend/important.html", context)
+    return render(request, "develop/important.html", context)
 
 def wc_view(request, *args, **kwargs):
     queryset = Room.objects.filter(room_type__id = 5)
     context = {
         "rooms": queryset
     }
-    return render(request, "frontend/wc.html", context)
+    return render(request, "develop/wc.html", context)
 
 def others_view(request, *args, **kwargs):
     queryset = Room.objects.filter(room_type__id = 6)
     context = {
         "rooms": queryset
     }
-    return render(request, "frontend/others.html", context)
+    return render(request, "develop/others.html", context)
+
+def favourite_view(request, *args, **kwargs):
+    context = {}
+    return render(request, "develop/favourite.html", context)
+
+def search_view(request, *args, **kwargs):
+    results = []
+    searched = []
+    if request.method == "POST":
+        searched = request.POST['search']
+        # if searched == '':
+        #     searched = 'None'
+        # else:
+        results = Room.objects.filter(name__contains=searched)
+    return render(request, 'develop/search.html', {'searched': searched, 'results': results})
+
+def room_search_view(request, *args, **kwargs):
+    results = Room.objects.all()
+    return render(request, 'develop/room_search.html', {'rooms': results})
+
+def room_view(request, room_id):
+    print(room_id)
+    room = Room.objects.get(pk=room_id)
+    # floors = Floor.objects.all()
+    # floor = floors.get(id=room.floor.id)
+    return render(request, 'develop/room_detail.html', {'room': room})
+    # return render(request, 'develop/room_detail.html', {'room': room, 'name': floor.name})

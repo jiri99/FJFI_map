@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/static/frontend/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/develop/css/styles.css">
     <style>
         body {
             margin: 0;
@@ -97,10 +97,6 @@
     </style>
 
     <style>
-        a {
-            color: #FFFFFF;
-        }
-
         li {
             background: #E5E5E5;
         }
@@ -254,6 +250,14 @@
 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
+        
+        hr.solid {
+            border-top: 3px solid #bbb;
+            margin: 0px;
+
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
     </style>
 </head>
 
@@ -261,7 +265,7 @@
     <div class="row header">
         <div class="col-md-2 col-sm-2 col-xs-4">
             <div class="text-center top-buffer">
-                <a class="header_menu_link text-center">...</a>
+                <a class="header_menu_link text-center" onclick="openNav()">...</a>
             </div>
         </div>
         <div class="col-md-10 col-sm-10 col-xs-4">
@@ -270,79 +274,31 @@
         <div class="col-md-2 col-sm-2 col-xs-4">
             <div class="text-center top-buffer">
                 <a>
-                    <img src="/static/frontend/icon/info_icon.svg" width="51px" height="57px" />
+                    <img src="/static/develop/icon/info_icon.svg" width="51px" height="57px" />
                 </a>
             </div>
         </div>
     </div>
 
-    {% for floor in object_floor %}
-    <div class="row top-buffer">
-        <div class="container">
-            <div class="col-md-10 col-sm-10 col-xs-12">
-                <p class="floor_text"> {{floor.name}} </p>
-                <img class="floor_img" src="{{MEDIA_URL}}{{floor.image.url}}" />
-            </div>
+    <form action="{% url 'search' %}" class="form-inline" method=POST>
+        {% csrf_token %}
+        <div class="form-group mb-8">
+            <!-- <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1> -->
         </div>
-    </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="" class="sr-only">search</label>
+            <input name="search" type="" class="form-control" id="" placeholder="Hledat">
+        </div>
+        <button type="submit" class="btn btn-success btn-lg mb-2">Search</button>
+    </form>
+
+    {% for room in rooms %}
+    <h3> <a href="{% url 'room_detail' room.id %}">{{ room.name }}</a></h3>
+    <p>
+        <a class='btn btn-sm first top-buffer-menu'> {{ room.name }} </a>
+    </p>
+    <hr class="solid">
     {% endfor %}
-
-    <footer id="footer  " class="page-footer fixed-bottom">
-        <div class="top-buffer">
-            <div class="container">
-                <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
-                    <div class="row top-buffer">
-                        <div class="col-md-4 col-sm-4 col-xs-4 text-center">
-                            <button type="button" class="btn btn-footer btn-square-md">
-                                <img src="/static/frontend/icon/heart_icon.svg" width=100% height=100% />
-                            </button>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4 text-center">
-                            <button type="button" class="btn btn-footer btn-square-md">
-                                <img src="/static/frontend/icon/menu_icon.svg" width=100% height=100% />
-                            </button>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4 text-center">
-                            <button type="button" class="btn btn-footer btn-square-md">
-                                <img src="/static/frontend/icon/search_icon.svg" width=100% height=100% />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script>
-        window.addEventListener('resize', function (event) {
-            var newWidth = window.innerWidth;
-            if (newWidth > 767) {
-                displayNav(newWidth);
-            }
-            else {
-                closeNav();
-            }
-        });
-
-        function openNav() {
-            var newWidth = window.innerWidth;
-            if (newWidth > 767) {
-                displayNav(newWidth);
-            }
-            else {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-        }
-
-        function displayNav(newWidth) {
-            document.getElementById("mySidenav").style.width = "20vw";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
 
 </body>
 

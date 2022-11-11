@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from develop.views import home_view, homepage_view, display_view, classes_view, important_view, others_view, wc_view
+from develop.views import home_view, homepage_view, display_view, classes_view, important_view, others_view, wc_view, search_view, room_search_view, favourite_view, room_view
 
 urlpatterns = [
     path('', home_view, name='home'),
@@ -28,6 +28,10 @@ urlpatterns = [
     path('important/', important_view, name='important'),
     path('others/', others_view, name='others'),
     path('wc/', wc_view, name='wc'),
+    path('room_search/', room_search_view, name='room_search'),
+    path('search/', search_view, name='search'),
+    path('favourite/', favourite_view, name='favourite'),
+    path('room_detail/<room_id>', room_view, name='room_detail'),
 ]
 
 if settings.DEBUG:

@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 from develop.views import home_view, homepage_view, display_view, list_view
 
 
-app_name = 'frontend'
+app_name = 'develop'
 
 urlpatterns = [
     path('', views.index, name='index'),
