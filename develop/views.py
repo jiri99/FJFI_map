@@ -22,6 +22,22 @@ def homepage_view(request, *args, **kwargs):
     }
     return render(request, "develop/homepage.html", context)
 
+def navbar_view(request, *args, **kwargs):
+    queryset = Building.objects.all()
+    queryset_size =[{"size": 756, "color": "#AAD1FF"},
+                    {"size": 648, "color": "#93C4FF"},
+                    {"size": 540, "color": "#80BAFF"},
+                    {"size": 432, "color": "#6FB0FF"}, 
+                    {"size": 324, "color": "#5DA6FD"}, 
+                    {"size": 216, "color": "#4E9DFA"}, 
+                    {"size": 108, "color": "#4886FF"}, 
+                    {"size": 0, "color": "#4870FF"}]
+    context = {
+        "object_building": queryset,
+        "ellipse_style": queryset_size
+    }
+    return render(request, "develop/navbar.html", context)
+
 def display_view(request, *args, **kwargs):
     queryset_floor = Floor.objects.all()
     queryset_building = Building.objects.all()

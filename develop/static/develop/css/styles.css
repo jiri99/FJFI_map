@@ -46,6 +46,7 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
     min-height: 667px;
+    background: #E5E5E5;
 }
 
 footer {
@@ -130,6 +131,11 @@ div.content {
 a {
     color: black;
 }
+
+a.list {
+    color: #FFFFFF;
+}
+
 
 li {
     background: #E5E5E5;

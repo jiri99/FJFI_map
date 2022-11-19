@@ -17,21 +17,22 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from develop.views import home_view, homepage_view, display_view, classes_view, important_view, others_view, wc_view, search_view, room_search_view, favourite_view, room_view
+import develop.views as allviews
 
 urlpatterns = [
-    path('', home_view, name='home'),
+    path('', allviews.home_view, name='home'),
     path('admin/', admin.site.urls),
-    path('homepage/', homepage_view, name='homepage'),
-    path('display/', display_view, name='display'),
-    path('classes/', classes_view, name='classes'),
-    path('important/', important_view, name='important'),
-    path('others/', others_view, name='others'),
-    path('wc/', wc_view, name='wc'),
-    path('room_search/', room_search_view, name='room_search'),
-    path('search/', search_view, name='search'),
-    path('favourite/', favourite_view, name='favourite'),
-    path('room_detail/<room_id>', room_view, name='room_detail'),
+    path('homepage/', allviews.homepage_view, name='homepage'),
+    path('display/', allviews.display_view, name='display'),
+    path('classes/', allviews.classes_view, name='classes'),
+    path('important/', allviews.important_view, name='important'),
+    path('others/', allviews.others_view, name='others'),
+    path('wc/', allviews.wc_view, name='wc'),
+    path('navbar/', allviews.navbar_view, name='navbar'),
+    path('room_search/', allviews.room_search_view, name='room_search'),
+    path('search/', allviews.search_view, name='search'),
+    path('favourite/', allviews.favourite_view, name='favourite'),
+    path('room_detail/<room_id>', allviews.room_view, name='room_detail'),
 ]
 
 if settings.DEBUG:
