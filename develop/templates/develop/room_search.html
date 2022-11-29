@@ -130,7 +130,7 @@
             font-size: 30px !important;
             color: white !important;
 
-            background: #4870FF !important;
+            background: #2754F3 !important;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 40px !important;
         }
@@ -138,12 +138,6 @@
         .btn-primary {
             width: 130px;
             height: 144px;
-
-            /* height: 170px !important;
-      width: 170px !important;
-      text-align: center;
-      padding: 0px;
-      font-size: 12px; */
 
             background: #4870FF !important;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
@@ -155,14 +149,6 @@
             height: 52px !important;
             font-size: 30px !important;
             color: white !important;
-
-            /* Absolute position css */
-            /* position: absolute;
-      width: 280px;
-      height: 52px;
-      left: 95px;
-      top: 50px; */
-
 
             background: #4870FF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -218,35 +204,45 @@
     <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
         <div class="row">
             <div class="header">
-                <div class="col-md-3 col-sm-3 col-xs-4">
-                    <div class="text-center top-buffer">
-                        <a class="header_menu_link text-center" onclick="openNav()">...</a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-4">
-                    <p class="header_text text-center">Břehová</p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-4">
-                    <div class="text-center top-buffer">
-                        <a>
-                            <img src="/static/develop/icon/info_icon.svg" width="51px" height="57px" />
+                <div class="col-md-2 col-sm-2 col-xs-3">
+                    <div class="top-buffer">
+                        <a href="{% url 'display' %}">
+                            <button type="button" class="btn btn-menu btn-square-md"><</button>
                         </a>
                     </div>
                 </div>
+                <div class="col-md-10 col-sm-10 col-xs-9">
+                    <div class="top-buffer">
+                        <form action="{% url 'search' %}" class="form-inline" method=POST>
+                            {% csrf_token %}
+                            <div class="form-group mb-8">
+                                <!-- <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1> -->
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="" class="sr-only">search</label>
+                                <input name="search" type="" class="form-control" id="" placeholder="Hledat">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg mb-2">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
+            <!-- <svg width="100%">
+                <ellipse cx="50%" cy="57px" rx="68%" ry="108" style="fill:#4870FF"/>
+            </svg> -->
         </div>
 
-        <form action="{% url 'search' %}" class="form-inline" method=POST>
+        <!-- <form action="{% url 'search' %}" class="form-inline" method=POST>
             {% csrf_token %}
-            <div class="form-group mb-8">
-                <!-- <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1> -->
-            </div>
+            <div class="form-group mb-8"> -->
+        <!-- <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1> -->
+        <!-- </div>
             <div class="form-group mx-sm-3 mb-2">
                 <label for="" class="sr-only">search</label>
                 <input name="search" type="" class="form-control" id="" placeholder="Hledat">
             </div>
             <button type="submit" class="btn btn-success btn-lg mb-2">Search</button>
-        </form>
+        </form> -->
 
         {% for room in rooms %}
         <h3> <a href="{% url 'room_detail' room.id %}">{{ room.name }}</a></h3>
