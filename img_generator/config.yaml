@@ -1,0 +1,34 @@
+Brehova:
+  1.patro:
+    path: "./images/brehova/patro_1.png"
+    classes:
+      B-101:
+        image_path: "./../../"
+        cordinates: "206,628,245,900,466,869,431,593"
+  2.patro:
+    path: "./images/brehova/patro_2.png"
+    classes:
+      B-101:
+        image_path: "./../../"
+        cordinates: "206,628,245,900,466,869,431,593"
+  3.patro:
+    path: "./images/brehova/patro_3.png"
+    classes:
+      B-101:
+        image_path: "./../../"
+        cordinates: "206,628,245,900,466,869,431,593"
+  4.patro:
+    path: "./images/brehova/patro_4.png"
+    classes:
+      402 radiochemické praktikum KJCH:
+        image_path: "./../../"
+        cordinates: "1017,427,1017,646,1308,648,1315,421"
+      403 Laboratoř:
+        image_path: "./../../"
+        cordinates: "1319,425,1315,646,1531,646,1529,423"
+  5.patro:
+    path: "./images/brehova/patro_5.png"
+    classes:
+      B-101:
+        image_path: "./../../"
+        cordinates: "206,628,245,900,466,869,431,593"

@@ -17,16 +17,24 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from frontend.views import home_view, homepage_view, display_view, list_view
+import develop.views as allviews
 
 urlpatterns = [
-    path('', home_view, name='home'),
+    path('', allviews.home_view, name='home'),
     path('admin/', admin.site.urls),
-    path('homepage/', homepage_view, name='homepage'),
-    path('display/', display_view, name='display'),
-    path('list/', list_view, name='list'),
+    path('homepage/', allviews.homepage_view, name='homepage'),
+    path('display/', allviews.display_view, name='display'),
+    path('classes/', allviews.classes_view, name='classes'),
+    path('important/', allviews.important_view, name='important'),
+    path('others/', allviews.others_view, name='others'),
+    path('wc/', allviews.wc_view, name='wc'),
+    path('navbar/', allviews.navbar_view, name='navbar'),
+    path('room_search/', allviews.room_search_view, name='room_search'),
+    path('search/', allviews.search_view, name='search'),
+    path('favourite/', allviews.favourite_view, name='favourite'),
+    path('room_detail/<room_id>', allviews.room_view, name='room_detail'),
 ]
 
 if settings.DEBUG:
-        urlpatterns += static(settings.MEDIA_URL,
-                              document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,
+                        document_root=settings.MEDIA_ROOT)
