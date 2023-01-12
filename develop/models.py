@@ -56,6 +56,7 @@ class Room(models.Model):
     room_type = models.ManyToManyField(Room_type)
     name = models.TextField()
     description = models.TextField()
+    area = models.TextField(default='')
     image = models.ImageField(upload_to='develop/db_images',  default='brehova/4. patro/401.jpg')
 
     class Meta:

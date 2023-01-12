@@ -39,11 +39,13 @@ def navbar_view(request, *args, **kwargs):
     return render(request, "develop/navbar.html", context)
 
 def display_view(request, *args, **kwargs):
+    queryset_room = Room.objects.all()
     queryset_floor = Floor.objects.all()
     queryset_building = Building.objects.all()
     context = {
         "object_floor": queryset_floor,
-        "object_building": queryset_building
+        "object_building": queryset_building,
+        "object_room": queryset_room
     }
     return render(request, "develop/display.html", context)
 
