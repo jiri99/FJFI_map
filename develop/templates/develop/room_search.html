@@ -8,212 +8,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/develop/css/styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: "Lato", sans-serif;
-            min-height: 667px;
-        }
-
-        footer {
-            position: fixed;
-            left: 0;
-            bottom: 40px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .sidebar {
-            padding: 5px;
-            background-color: #E5E5E5;
-            position: fixed;
-            height: 100%;
-            width: 20vw;
-            overflow: auto;
-        }
-
-        .sidebar a {
-            display: block;
-            color: black;
-            padding: 16px;
-            text-decoration: none;
-        }
-
-        .sidebar a.active {
-            background-color: #0327A8;
-            color: white;
-        }
-
-        .sidebar a:hover:not(.active) {
-            background-color: #0327A8;
-            color: white;
-        }
-
-        div.content {
-            margin-left: 200px;
-            padding: 1px 16px;
-            height: 1000px;
-        }
-
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-            display: none;
-        }
-
-
-        @media screen and (max-width: 767px) {
-            .sidebar {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #E5E5E5;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-                text-align: center;
-            }
-
-            .sidebar a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: black;
-                display: block;
-                transition: 0.3s;
-            }
-
-            .sidebar .closebtn {
-                display: block;
-            }
-        }
-    </style>
-
-    <style>
-        li {
-            background: #E5E5E5;
-        }
-
-        .navbar {
-            background: #E5E5E5;
-            color: #E5E5E5;
-            border-color: #E5E5E5;
-        }
-
-        .navbar-header {
-            background: #E5E5E5;
-        }
-
-        .container-fluid {
-            background: #E5E5E5;
-        }
-
-        .top-buffer {
-            margin-top: 10px;
-        }
-
-        .top-buffer-menu {
-            margin-top: 5px;
-            border-radius: 24px;
-        }
-
-        .btn-menu {
-            width: 52px;
-            height: 52px;
-            font-size: 30px !important;
-            color: white !important;
-
-            background: #2754F3 !important;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 40px !important;
-        }
-
-        .btn-primary {
-            width: 130px;
-            height: 144px;
-
-            background: #4870FF !important;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-            border-radius: 40px !important;
-        }
-
-        .btn-category {
-            width: 280px !important;
-            height: 52px !important;
-            font-size: 30px !important;
-            color: white !important;
-
-            background: #4870FF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 25px 0px 0px 25px !important;
-        }
-
-        .header {
-            width: 100%;
-            height: 108.5px;
-
-            background: #4870FF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 0px 0px 90px 90px !important;
-        }
-
-        .header_text {
-            margin-top: 42px;
-
-            font-family: 'Ubuntu';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 41px;
-
-            color: #FFFFFF;
-
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .header_menu_link {
-            font-family: 'Ubuntu';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 41px;
-
-            color: #FFFFFF;
-
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        hr.solid {
-            border-top: 3px solid #bbb;
-            margin: 0px;
-
-            border: 1px solid #FFFFFF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-    </style>
+    <link rel="stylesheet" href="{% static '/develop/css/styles.css' %}">
 </head>
 
 <body>
     <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
         <div class="row">
             <div class="header">
-                <div class="col-md-2 col-sm-2 col-xs-3">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="top-buffer">
                         <a href="{% url 'display' %}">
                             <button type="button" class="btn btn-menu btn-square-md"><</button>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-10 col-sm-10 col-xs-9">
-                    <div class="top-buffer">
-                        <form action="{% url 'search' %}" class="form-inline" method=POST>
+                <form action="{% url 'search' %}" class="form-inline" method=POST>
+                    <div class="col-md-7 col-sm-7 col-xs-7">
+                        <div class="top-buffer_extended">
                             {% csrf_token %}
                             <div class="form-group mb-8">
                                 <!-- <h1>{% if type %}{{ type.name }}{% else %} List of Books {% endif %}</h1> -->
@@ -222,10 +33,14 @@
                                 <label for="" class="sr-only">search</label>
                                 <input name="search" type="" class="form-control" id="" placeholder="Hledat">
                             </div>
-                            <button type="submit" class="btn btn-success btn-lg mb-2">Search</button>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <div class="top-buffer_extended">
+                            <button type="submit" class="btn btn-success">Search</button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <!-- <svg width="100%">
                 <ellipse cx="50%" cy="57px" rx="68%" ry="108" style="fill:#4870FF"/>
@@ -245,11 +60,13 @@
         </form> -->
 
         {% for room in rooms %}
-        <h3> <a href="{% url 'room_detail' room.id %}">{{ room.name }}</a></h3>
-        <p>
+        <a class="search" href="{% url 'room_detail' room.id %}">
+            <h3>{{ room.name }}</h3>
+        </a>
+        <!-- <p>
             <a class='btn btn-sm first top-buffer-menu'> {{ room.name }} </a>
-        </p>
-        <hr class="solid">
+        </p> -->
+        <hr class="search">
         {% endfor %}
     </div>
 
