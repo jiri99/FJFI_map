@@ -8,17 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/develop/css/styles.css">
+    <link rel="stylesheet" href="{% static '/develop/css/styles.css' %}">
 </head>
-<style>
-    .top-buffer {
-      margin-top: 20px;
-    }
-
-    .room_title {
-        font-size: medium !important;
-    }
-</style>
 
 <body>
     <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
@@ -32,7 +23,7 @@
                 <button type="button" class="btn btn-category btn-square-md room_title"> {{room.name}} </button>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="top-buffer">
+                <div class="top-buffer_extended">
                     <img class="floor_img" src="{{MEDIA_URL}}{{room.image.url}}" />
                 </div>
             </div>
