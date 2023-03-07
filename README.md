@@ -6,8 +6,8 @@ This repository contains the app written in [Django](https://www.djangoproject.c
 ## Running
 
 ### Locally
-- Set up a local development environment, edit `local_settings_example.py` accordingly and rename it to `local_settings.py`.
 - Create virtual environment, run `pipenv install` to install dependencies.
+- Run command `python manage.py runserver` to run server locally.
 
 ## Generate images
 
