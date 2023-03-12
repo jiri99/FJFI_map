@@ -11,7 +11,7 @@ from PIL import Image, ImageColor
 import cv2
 import yaml
 
-img_output_path = "./../develop/db_images"
+img_output_path = "./../develop/db_images/"
 config_path = "./config.yaml"
 
 def display(img):
@@ -26,9 +26,8 @@ def prerocess_cordinates(cordinates):
         cord[int(i/2),:] = cord_all[i:(i+2)]
     return cord
     
-def shadow_area(image_floor, room_data):    
+def shadow_area(image_floor, cordinates):    
     mask = np.zeros(image_floor.shape, dtype=image_floor.dtype)
-    cordinates = prerocess_cordinates(room_data["cordinates"])
     cv2.fillConvexPoly(mask, cordinates, 128)
     
     mask_bool = mask > 0
@@ -47,10 +46,14 @@ def cropp(img, cordinates, x_size = 300, y_size = 300):
     y_middle = np.mean(cordinates[:,1])
     
     cropped_img = img.crop((x_middle-x_size, y_middle-y_size, x_middle+x_size, y_middle+y_size))
-    
-    plt.imshow(cropped_img, cmap='gray', vmin=0, vmax=255)
-    plt.show()
+    return cropped_img
 
+def generate_image(image_floor, room_data, room_name, img_output_path):
+    cordinates = prerocess_cordinates(room_data["cordinates"])
+    img = shadow_area(image_floor, cordinates)
+    image = cropp(img, cordinates)
+    display(image)
+    image.save(img_output_path + room_name + ".jpg")
     
 
 with open(config_path) as f:
@@ -58,7 +61,6 @@ with open(config_path) as f:
 
 for building in list(data.keys()):
     for floor in list(data[building].keys()):
-        # print(data[building][floor]["path"])
         # data[building][floor]["img"] = np.array(Image.open(data[building][floor]["path"]))
         data[building][floor]["img"] = cv2.imread(data[building][floor]["path"],0)
         
@@ -67,6 +69,8 @@ image_floor = data["Brehova"]["1.patro"]["img"]
 # image_floor = cv2.cvtColor(data["Brehova"]["1.patro"]["img"], cv2.COLOR_BGR2RGB)
 room_name = "B-101"
 room_data = data["Brehova"]["1.patro"]["classes"][room_name]
+
+generate_image(image_floor, room_data, room_name, img_output_path)
 
 # %%
 
@@ -119,6 +123,8 @@ cropped_img = img.crop((x_middle-x_size, y_middle-y_size, x_middle+x_size, y_mid
 
 plt.imshow(cropped_img, cmap='gray', vmin=0, vmax=255)
 plt.show()
+
+img.save("pokus.jpg")
 
 
 # path = "./images/brehova/patro_1.png"
