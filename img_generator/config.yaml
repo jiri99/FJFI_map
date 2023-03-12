@@ -4,6 +4,7 @@ Brehova:
     classes:
       B-101:
         cordinates: "206,628,245,900,466,869,431,593"
+        name: ""
   2.patro:
     path: "./images/brehova/patro_2.jpg"
     classes:

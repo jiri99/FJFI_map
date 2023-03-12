@@ -10,20 +10,20 @@ import matplotlib.pyplot as plt
 import yaml
 import sqlite3
 
-def insertVaribleIntoTable(id, floor, room_type, name, description, area, image):
+def insert_into_database(id, name, description, floor_id, image, area):
     try:
         sqliteConnection = sqlite3.connect('./../db.sqlite3')
         cursor = sqliteConnection.cursor()
-        print("Connected to SQLite")
+        # print("Connected to SQLite")
 
-        sqlite_insert_with_param = """INSERT INTO DEVELOP
-                          (id, floor, room_type, name, description, area, image) 
-                          VALUES (?, ?, ?, ?, ?, ?, ?);"""
+        sqlite_insert_with_param = """INSERT INTO develop_room
+                          (id, name, description, floor_id, image, area) 
+                          VALUES (?, ?, ?, ?, ?, ?);"""
 
-        data_tuple = (id, floor, room_type, name, description, area, image)
+        data_tuple = (id, name, description, floor_id, image, area)
         cursor.execute(sqlite_insert_with_param, data_tuple)
         sqliteConnection.commit()
-        print("Python Variables inserted successfully into SqliteDb_developers table")
+        print(name + " inserted successfully into database")
 
         cursor.close()
 
@@ -32,6 +32,6 @@ def insertVaribleIntoTable(id, floor, room_type, name, description, area, image)
     finally:
         if sqliteConnection:
             sqliteConnection.close()
-            print("The SQLite connection is closed")
+            # print("The SQLite connection is closed")
 
-insertVaribleIntoTable(20, '1', '1', 'Pokus', "", "200,200", "./images/brehova/suterén2.jpg")
+insert_into_database(20, "Pokus", "Script test", 1, "images/brehova/suterén2.jpg", "200,200")
