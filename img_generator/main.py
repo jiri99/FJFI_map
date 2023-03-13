@@ -29,7 +29,6 @@ for building in list(data.keys()):
         for room in list(data[building][floor]["classes"].keys()):
             generate_image(data[building][floor]["img"], data[building][floor]["classes"][room], room, img_output_path)
             insert_into_database(id_counter, data[building][floor]["classes"][room]["name"], "", 1, img_output_path + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
-            
             id_counter += 1
 
 
