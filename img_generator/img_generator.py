@@ -44,7 +44,23 @@ def cropp(img, cordinates, x_size = 300, y_size = 300):
     x_middle = np.mean(cordinates[:,0])
     y_middle = np.mean(cordinates[:,1])
     
-    cropped_img = img.crop((x_middle-x_size, y_middle-y_size, x_middle+x_size, y_middle+y_size))
+    x_up = x_middle-x_size
+    x_down = x_middle+x_size
+    y_up = y_middle-y_size
+    y_down = y_middle+y_size
+    
+    if(x_up < 0):
+        x_up = 0
+    if(y_up < 0):
+        y_up = 0
+    
+    if(x_down > img.shape[0]):
+        x_up = img.shape[0]
+    if(y_down > img.shape[1]):
+        y_up = img.shape[1]
+    
+    
+    cropped_img = img.crop((x_up, y_up, x_down, y_down))
     return cropped_img
 
 def generate_image(image_floor, room_data, room_name, img_output_path):

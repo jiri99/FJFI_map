@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import yaml
 import sqlite3
 
-def insert_into_database(id, name, description, floor_id, image, area):
+def insert_into_database_room(id, name, description, floor_id, image, area):
     try:
         sqliteConnection = sqlite3.connect('./../db.sqlite3')
         cursor = sqliteConnection.cursor()
@@ -34,4 +34,26 @@ def insert_into_database(id, name, description, floor_id, image, area):
             sqliteConnection.close()
             # print("The SQLite connection is closed")
 
-insert_into_database(20, "Pokus", "Script test", 1, "images/brehova/suterén2.jpg", "200,200")
+def insert_into_database_roomtype(id, id_room, id_type):
+    try:
+        sqliteConnection = sqlite3.connect('./../db.sqlite3')
+        cursor = sqliteConnection.cursor()
+        # print("Connected to SQLite")
+
+        sqlite_insert_with_param = """INSERT INTO develop_room_room_type
+                          (id, id_room, id_type) 
+                          VALUES (?, ?, ?);"""
+
+        data_tuple = (id, id_room, id_type)
+        cursor.execute(sqlite_insert_with_param, data_tuple)
+        sqliteConnection.commit()
+        print(id_room + " inserted successfully into database")
+
+        cursor.close()
+
+    except sqlite3.Error as error:
+        print("Failed to insert Python variable into sqlite table", error)
+    finally:
+        if sqliteConnection:
+            sqliteConnection.close()
+            # print("The SQLite connection is closed")
