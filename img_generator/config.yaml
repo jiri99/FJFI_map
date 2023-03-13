@@ -201,80 +201,80 @@ Brehova:
         type: "important"
         saved: 0
       B-214:
-        cordinates: ""
+        cordinates: "396,273,406,355,491,339,478,262"
         name: "214 mechanická dílna KF"
         type: "class"
         saved: 0
       B-215:
-        cordinates: ""
+        cordinates: "164,306,191,510,414,481,385,275"
         name: "215 učebna"
         type: "class"
         saved: 0
       B-216:
-        cordinates: ""
+        cordinates: "208,628,218,698,443,677,429,599"
         name: "216 katedra KF"
         type: "important"
         saved: 0
       B-217:
-        cordinates: ""
+        cordinates: "220,708,232,795,455,768,441,677"
         name: "217 sekretariát KF"
         type: "important"
         saved: 0
       B-218:
-        cordinates: ""
+        cordinates: "234,807,243,898,464,867,451,770"
         name: "218 vedoucí KF"
         type: "important"
         saved: 0
       B-219:
-        cordinates: ""
+        cordinates: "247,904,272,1092,493,1061,468,876"
         name: "219 katedra KF"
         type: "important"
         saved: 0
       B-220:
-        cordinates: ""
+        cordinates: "274,1103,294,1268,517,1241,493,1070"
         name: "220 katedra KF"
         type: "important"
         saved: 0
       B-221:
-        cordinates: ""
+        cordinates: "294,1278,321,1450,629,1454,625,1245,519,1247"
         name: "221 lab. experimentální jaderné fyziky KF"
         type: "class"
         saved: 0
       B-225:
-        cordinates: ""
+        cordinates: "623,636,730,640,734,463,617,454"
         name: "225 wc ž"
         type: "wc"
         saved: 0
       B-226:
-        cordinates: ""
+        cordinates: "534,584,540,636,610,638,612,580"
         name: "226 výtah"
         type: "others"
         saved: 0
       B-227:
-        cordinates: "517,463,528,572,617,574,623,638,734,638,732,463"
+        cordinates: "517,465,530,578,617,580,614,460"
         name: "227 lab. filmové dozimetrie KDAIZ"
         type: "class"
         saved: 0
       B-230:
-        cordinates: ""
+        cordinates: "1593,458,1595,638,1701,636,1697,456"
         name: "230 wc m"
         type: "wc"
         saved: 0
       B-231:
-        cordinates: ""
+        cordinates: "1709,570,1711,640,1788,638,1786,564"
         name: "231 výtah"
         type: "others"
         saved: 0
       B-232:
-        cordinates: ""
+        cordinates: "1707,460,1705,568,1786,560,1783,463"
         name: "232 kuchyňka"
         type: "others"
         saved: 0
-      B-235:
-        cordinates: ""
-        name: "235 terasa"
-        type: "others"
-        saved: 0
+      # B-235:
+      #   cordinates: ""
+      #   name: "235 terasa"
+      #   type: "others"
+      #   saved: 0
   3.patro:
     path: "./images/brehova/patro_3.jpg"
     classes:
