@@ -590,57 +590,57 @@ Brehova:
         type: "class"
         saved: 0
       B-415:
-        cordinates: ""
+        cordinates: "1916,332,1920,471,2060,473,2060,458,2081,456,2079,409,2060,409,2052,337"
         name: "415 pracovna"
         type: "class"
         saved: 0
       B-416:
-        cordinates: ""
+        cordinates: "1920,481,1922,593,2064,593,2062,566,2087,566,2085,510,2062,508,2058,479"
         name: "416 pracovna"
         type: "class"
         saved: 0
       B-417:
-        cordinates: ""
+        cordinates: "1926,712,2060,712,2062,681,2087,679,2085,628,2062,628,2058,601,1920,605"
         name: "417 pracovna"
         type: "class"
         saved: 0
       B-418:
-        cordinates: ""
+        cordinates: "1926,723,1928,838,2064,832,2066,803,2091,801,2089,750,2066,748,2064,721"
         name: "418 pracovna"
         type: "class"
         saved: 0
       B-419:
-        cordinates: ""
+        cordinates: "1932,956,2068,956,2068,921,2093,919,2091,871,2068,871,2068,842,1930,845"
         name: "419 pracovna"
         type: "class"
         saved: 0
       B-420:
-        cordinates: ""
+        cordinates: "1934,1076,2071,1076,2071,1041,2095,1041,2095,995,2071,995,2068,964,1932,964"
         name: "420 pracovna"
         type: "class"
         saved: 0
       B-421:
-        cordinates: ""
+        cordinates: "1949,1086,1951,1227,2073,1224,2073,1142,2097,1142,2097,1090,2073,1090,2073,1078"
         name: "421 pracovna"
         type: "class"
         saved: 0
       B-422:
-        cordinates: ""
+        cordinates: "1788,1088,1788,1233,1901,1229,1903,1163,1883,1163,1881,1086"
         name: "422 pracovna"
         type: "class"
         saved: 0
       B-423:
-        cordinates: ""
+        cordinates: "1783,966,1783,995,1757,997,1761,1051,1786,1051,1788,1080,1881,1078,1874,966"
         name: "423 pracovna"
         type: "class"
         saved: 0
       B-424:
-        cordinates: ""
+        cordinates: "1783,847,1781,878,1755,878,1757,931,1783,931,1783,960,1876,958,1872,845"
         name: "424 pracovna"
         type: "class"
         saved: 0
       B-425:
-        cordinates: ""
+        cordinates: "1779,725,1783,840,1874,838,1872,723"
         name: "425 serverovna"
         type: "others"
         saved: 0
