@@ -540,7 +540,7 @@ Brehova:
     path: "./images/brehova/patro_4.jpg"
     classes:
       B-401:
-        cordinates: ""
+        cordinates: "798,427,792,648,1013,650,1011,427"
         name: "401 lab KJCH"
         type: "class"
         saved: 0
@@ -555,37 +555,37 @@ Brehova:
         type: "class"
         saved: 0
       B-407:
-        cordinates: ""
+        cordinates: "1538,591,1534,644,1565,644,1565,591"
         name: "407 sprcha"
         type: "wc"
         saved: 0
       B-408:
-        cordinates: ""
+        cordinates: "1538,500,1540,580,1573,582,1573,638,1626,640,1626,582,1697,578,1697,524,1647,522,1641,471,1600,471,1600,498"
         name: "408 wc m"
         type: "wc"
         saved: 0
       B-409:
-        cordinates: ""
+        cordinates: "1629,589,1633,636,1668,636,1666,586"
         name: "409 úklid"
         type: "wc"
         saved: 0
       B-410:
-        cordinates: ""
+        cordinates: "1672,589,1676,636,1730,634,1730,584"
         name: "410 výtah"
         type: "others"
         saved: 0
       B-411:
-        cordinates: ""
+        cordinates: "1705,526,1707,578,1734,580,1734,601,1856,599,1860,477,1732,485,1734,522"
         name: "411 kotelna"
         type: "others"
         saved: 0
       B-412:
-        cordinates: ""
+        cordinates: "1792,719,1860,717,1858,657,1790,659"
         name: "412 kuchyňka"
         type: "others"
         saved: 0
       B-414:
-        cordinates: ""
+        cordinates: "1771,347,1769,382,1744,382,1746,436,1769,436,1775,475,1870,475,1868,347"
         name: "414 pracovna"
         type: "class"
         saved: 0
@@ -645,27 +645,27 @@ Brehova:
         type: "others"
         saved: 0
       B-429:
-        cordinates: ""
+        cordinates: "654,514,654,646,784,646,786,512,716,514,714,485,676,487,676,514"
         name: "429 pracovna"
         type: "class"
         saved: 0
       B-430:
-        cordinates: ""
+        cordinates: "559,599,559,642,650,646,647,553,614,553,608,597"
         name: "430 wc ž"
         type: "wc"
         saved: 0
       B-431:
-        cordinates: ""
+        cordinates: "499,593,499,644,550,642,552,591"
         name: "431 výtah"
         type: "others"
         saved: 0
       B-432:
-        cordinates: ""
+        cordinates: "437,547,435,578,449,578,449,640,491,640,495,584,532,580,530,549"
         name: "432 sprcha + wc"
         type: "wc"
         saved: 0
       B-433:
-        cordinates: ""
+        cordinates: "354,549,367,586,433,578,435,547"
         name: "433 úklid"
         type: "wc"
         saved: 0
@@ -715,22 +715,22 @@ Brehova:
         type: "class"
         saved: 0
       B-446:
-        cordinates: ""
+        cordinates: "216,1266,255,1499,579,1495,577,1282,571,1216"
         name: "446 půda"
         type: "others"
         saved: 0
       B-447:
-        cordinates: ""
+        cordinates: "92,314,119,520,451,479,420,266"
         name: "447 půda"
         type: "others"
         saved: 0
       B-448:
-        cordinates: ""
+        cordinates: "1736,97,1740,281,1765,283,1771,339,1866,343,1862,297,1912,293,1914,328,2050,324,2054,281,2068,283,2064,52"
         name: "448 půda"
         type: "others"
         saved: 0
       B-449:
-        cordinates: ""
+        cordinates: "1779,1243,1786,1505,2097,1497,2087,1231"
         name: "449 půda"
         type: "others"
         saved: 0
