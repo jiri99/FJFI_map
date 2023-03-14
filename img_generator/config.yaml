@@ -3,137 +3,137 @@ Brehova:
     path: "./images/brehova/přízemí.jpg"
     classes:
       B-001:
-        cordinates: ""
+        cordinates: "1445,1233,1443,1460,1556,1460,1556,1233"
         name: "1 studijní"
         type: "important"
         saved: 0
       B-002:
-        cordinates: ""
+        cordinates: "1565,1233,1565,1454,1852,1454,1856,1233"
         name: "2 studijní"
         type: "important"
         saved: 0
       B-003:
-        cordinates: ""
+        cordinates: "1860,1229,1862,1456,2188,1456,2186,1233"
         name: "3 proděkan"
         type: "important"
         saved: 0
       B-004:
-        cordinates: ""
+        cordinates: "1951,1113,1953,1224,2186,1224,2184,1113"
         name: "4 pracovna KF"
         type: "class"
         saved: 0
       B-005:
-        cordinates: ""
+        cordinates: "1942,768,1949,1101,2186,1103,2178,766"
         name: "5 pracovna KF"
         type: "class"
         saved: 0
-      B-006:
-        cordinates: ""
-        name: "6 pracovna KF"
-        type: "class"
-        saved: 0
+      # B-006:
+      #   cordinates: ""
+      #   name: "6 pracovna KF"
+      #   type: "class"
+      #   saved: 0
       B-007:
-        cordinates: ""
+        cordinates: "1938,636,1942,768,2176,758,2176,622"
         name: "7 spisovna"
         type: "important"
         saved: 0
       B-008a:
-        cordinates: ""
+        cordinates: "1936,444,1940,626,2172,622,2170,436"
         name: "8a technický provoz"
         type: "others"
         saved: 0
       B-008:
-        cordinates: ""
+        cordinates: "1936,281,1934,432,2168,430,2166,287"
         name: "8 správa budov"
         type: "others"
         saved: 0
       B-009:
-        cordinates: ""
+        cordinates: "1327,415,1327,642,1616,640,1616,417"
         name: "9 počítačová učebna"
         type: "class"
         saved: 0
       B-010:
-        cordinates: ""
+        cordinates: "1129,413,1129,640,1315,636,1317,417"
         name: "10 posluchárna"
         type: "class"
         saved: 0
       B-011:
-        cordinates: ""
+        cordinates: "922,415,922,636,1120,636,1120,415"
         name: "11 posluchárna"
         type: "class"
         saved: 0
       B-012:
-        cordinates: ""
+        cordinates: "804,634,804,450,914,454,912,636"
         name: "12 studijní unie"
         type: "important"
         saved: 0
       B-013:
-        cordinates: ""
+        cordinates: "263,609,292,785,517,758,491,572"
         name: "13 kabinet KF"
         type: "important"
         saved: 0
       B-013a:
-        cordinates: ""
+        cordinates: "290,795,317,981,542,950,519,766"
         name: "13a seminární místnost KF"
         type: "class"
         saved: 0
       B-014:
-        cordinates: ""
+        cordinates: "319,989,352,1258,579,1229,544,958"
         name: "14 kabinet KF"
         type: "important"
-        saved: 0
+        saved: 0    
       B-015:
-        cordinates: ""
+        cordinates: "689,1239,687,1464,383,1462,352,1266,579,1235"
         name: "15 pracovna KDAIZ"
         type: "class"
         saved: 0
       B-016:
-        cordinates: ""
+        cordinates: "691,1235,689,1466,840,1458,840,1237"
         name: "16 propagace"
         type: "others"
         saved: 0
       B-017:
-        cordinates: ""
+        cordinates: "842,1237,842,1464,988,1462,986,1235"
         name: "17 propagace"
         type: "others"
         saved: 0
       B-018:
-        cordinates: ""
+        cordinates: "1104,1235,1104,1458,990,1462,988,1233"
         name: "18 podatelna"
         type: "important"
         saved: 0
       B-020:
-        cordinates: ""
+        cordinates: "1763,458,1763,562,1837,564,1833,458"
         name: "20 wc invalid"
         type: "wc"
         saved: 0
       B-021:
-        cordinates: ""
+        cordinates: "1835,97,1837,281,2166,277,2159,56"
         name: "21 pracovna JCH"
         type: "class"
         saved: 0
       B-022:
-        cordinates: ""
+        cordinates: "1626,456,1626,640,1757,636,1752,460"
         name: "22 wc m"
         type: "wc"
         saved: 0
       B-023:
-        cordinates: ""
+        cordinates: "1763,570,1761,638,1841,638,1839,574"
         name: "23 výtah"
         type: "others"
         saved: 0
       B-024:
-        cordinates: ""
+        cordinates: "575,454,592,568,685,566,685,640,798,638,796,454"
         name: "24 wc ž"
         type: "wc"
         saved: 0
       B-025:
-        cordinates: ""
+        cordinates: "592,574,600,634,678,636,678,572"
         name: "25 výtah"
         type: "others"
         saved: 0
       B-027:
-        cordinates: ""
+        cordinates: "243,413,253,510,478,481,466,384"
         name: "27 tokamak"
         type: "important"
         saved: 0
