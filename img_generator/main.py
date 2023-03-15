@@ -42,11 +42,11 @@ for building in list(data.keys()):
                         insert_into_database_roomtype(id_counter, id_counter, 6)    
                     data[building][floor]["classes"][room]["saved"] = 1
                     id_counter += 1
+                    with open(config_path_out, "w") as file:
+                        documents = yaml.dump(data, file)
                 else:
                     continue
             else:
                 continue
 
-with open(config_path_out, "w") as file:
-    documents = yaml.dump(data, file)
 
