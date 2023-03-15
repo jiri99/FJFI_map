@@ -1,0 +1,721 @@
+Brehova:
+  0.patro:
+    path: "./images/brehova/prizemi.jpg"
+    classes:
+      B-001:
+        cordinates: "1445,1233,1443,1460,1556,1460,1556,1233"
+        name: "1 studijni"
+        type: "important"
+        saved: 0
+      B-002:
+        cordinates: "1565,1233,1565,1454,1852,1454,1856,1233"
+        name: "2 studijni"
+        type: "important"
+        saved: 0
+      B-003:
+        cordinates: "1860,1229,1862,1456,2188,1456,2186,1233"
+        name: "3 prodekan"
+        type: "important"
+        saved: 0
+      B-004:
+        cordinates: "1951,1113,1953,1224,2186,1224,2184,1113"
+        name: "4 pracovna KF"
+        type: "class"
+        saved: 0
+      B-005:
+        cordinates: "1942,768,1949,1101,2186,1103,2178,766"
+        name: "5 pracovna KF"
+        type: "class"
+        saved: 0
+      B-007:
+        cordinates: "1938,636,1942,768,2176,758,2176,622"
+        name: "7 spisovna"
+        type: "important"
+        saved: 0
+      B-008a:
+        cordinates: "1936,444,1940,626,2172,622,2170,436"
+        name: "8a technicky provoz"
+        type: "others"
+        saved: 0
+      B-008:
+        cordinates: "1936,281,1934,432,2168,430,2166,287"
+        name: "8 sprava budov"
+        type: "others"
+        saved: 0
+      B-009:
+        cordinates: "1327,415,1327,642,1616,640,1616,417"
+        name: "9 pocitacova ucebna"
+        type: "class"
+        saved: 0
+      B-010:
+        cordinates: "1129,413,1129,640,1315,636,1317,417"
+        name: "10 poslucharna"
+        type: "class"
+        saved: 0
+      B-011:
+        cordinates: "922,415,922,636,1120,636,1120,415"
+        name: "11 poslucharna"
+        type: "class"
+        saved: 0
+      B-012:
+        cordinates: "804,634,804,450,914,454,912,636"
+        name: "12 studijni unie"
+        type: "important"
+        saved: 0
+      B-013:
+        cordinates: "263,609,292,785,517,758,491,572"
+        name: "13 kabinet KF"
+        type: "important"
+        saved: 0
+      B-013a:
+        cordinates: "290,795,317,981,542,950,519,766"
+        name: "13a seminarni mistnost KF"
+        type: "class"
+        saved: 0
+      B-014:
+        cordinates: "319,989,352,1258,579,1229,544,958"
+        name: "14 kabinet KF"
+        type: "important"
+        saved: 0    
+      B-015:
+        cordinates: "689,1239,687,1464,383,1462,352,1266,579,1235"
+        name: "15 pracovna KDAIZ"
+        type: "class"
+        saved: 0
+      B-016:
+        cordinates: "691,1235,689,1466,840,1458,840,1237"
+        name: "16 propagace"
+        type: "others"
+        saved: 0
+      B-017:
+        cordinates: "842,1237,842,1464,988,1462,986,1235"
+        name: "17 propagace"
+        type: "others"
+        saved: 0
+      B-018:
+        cordinates: "1104,1235,1104,1458,990,1462,988,1233"
+        name: "18 podatelna"
+        type: "important"
+        saved: 0
+      B-020:
+        cordinates: "1763,458,1763,562,1837,564,1833,458"
+        name: "20 wc invalid"
+        type: "wc"
+        saved: 0
+      B-021:
+        cordinates: "1835,97,1837,281,2166,277,2159,56"
+        name: "21 pracovna JCH"
+        type: "class"
+        saved: 0
+      B-022:
+        cordinates: "1626,456,1626,640,1757,636,1752,460"
+        name: "22 wc m"
+        type: "wc"
+        saved: 0
+      B-023:
+        cordinates: "1763,570,1761,638,1841,638,1839,574"
+        name: "23 vytah"
+        type: "others"
+        saved: 0
+      B-024:
+        cordinates: "575,454,592,568,685,566,685,640,798,638,796,454"
+        name: "24 wc z"
+        type: "wc"
+        saved: 0
+      B-025:
+        cordinates: "592,574,600,634,678,636,678,572"
+        name: "25 vytah"
+        type: "others"
+        saved: 0
+      B-027:
+        cordinates: "243,413,253,510,478,481,466,384"
+        name: "27 tokamak"
+        type: "important"
+        saved: 0
+  1.patro:
+    path: "./images/brehova/patro_1.jpg"
+    classes:
+      B-101:
+        cordinates: "296,1280,319,1450,627,1450,631,1251,517,1245"
+        name: "101 praktikum"
+        type: "class"
+        saved: 0
+      B-102:
+        cordinates: "639,1251,641,1452,902,1450,904,1251"
+        name: "102 praktikum"
+        type: "class"
+        saved: 0
+      B-103:
+        cordinates: "912,1249,916,1592,1527,1590,1534,1249"
+        name: "103 poslucharna"
+        type: "class"
+        saved: 0
+      B-105:
+        cordinates: "1534,1249,1536,1456,1660,1452,1662,1251"
+        name: "105 pokladna, majetek"
+        type: "important"
+        saved: 0
+      B-106:
+        cordinates: "1672,1251,1672,1452,1796,1454,1804,1247"
+        name: "106 mzdova ucetni"
+        type: "important"
+        saved: 0
+      B-107:
+        cordinates: "1808,1251,1808,1458,2130,1452,2130,1245"
+        name: "107 personalni oddeleni"
+        type: "important"
+        saved: 0
+      B-108:
+        cordinates: "1905,1028,2124,1022,2128,1239,1912,1243"
+        name: "108 dekan"
+        type: "important"
+        saved: 0
+      B-109:
+        cordinates: "1897,745,1905,1022,2122,1014,2114,739"
+        name: "109 tajemnik"
+        type: "important"
+        saved: 0
+      B-110:
+        cordinates: "1893,634,1897,735,2120,733,2118,628"
+        name: "110 financni uctarna"
+        type: "important"
+        saved: 0
+      B-111:
+        cordinates: "1885,310,1893,626,2120,622,2108,306"
+        name: "111 zasedaci mistnost"
+        type: "important"
+        saved: 0
+      B-112:
+        cordinates: "1878,83,1885,301,2106,299,2102,56"
+        name: "112 prodekan"
+        type: "important"
+        saved: 0
+      B-112a:
+        cordinates: "1781,97,1786,202,1876,200,1872,83"
+        name: "112a veda, vyzkum, zahranicni styky"
+        type: "important"
+        saved: 0
+      B-113:
+        cordinates: "1707,460,1709,564,1786,564,1786,460"
+        name: "113 kuchynka"
+        type: "others"
+        saved: 0
+      B-114:
+        cordinates: "1368,417,1368,638,1589,638,1583,419"
+        name: "114 poslucharna"
+        type: "class"
+        saved: 0
+      B-115:
+        cordinates: "1073,419,1071,636,1364,640,1362,417"
+        name: "115 poslucharna"
+        type: "class"
+        saved: 0
+      B-116:
+        cordinates: "850,419,844,642,1063,638,1061,419"
+        name: "116 pracovna"
+        type: "class"
+        saved: 0
+      B-117:
+        cordinates: "743,463,740,638,838,638,840,463"
+        name: "117 pracovna"
+        type: "class"
+        saved: 0
+      B-119:
+        cordinates: "393,273,406,357,488,343,480,258"
+        name: "119 kabinet KF"
+        type: "important"
+        saved: 0
+      B-120:
+        cordinates: "164,301,195,514,414,481,385,273"
+        name: "120 pracovna KF"
+        type: "class"
+        saved: 0
+      B-121:
+        cordinates: "210,628,245,898,466,867,429,599"
+        name: "121 lab. KF"
+        type: "important"
+        saved: 0
+      B-122:
+        cordinates: "245,906,272,1096,493,1061,466,876"
+        name: "122 praktikum"
+        type: "class"
+        saved: 0
+      B-123:
+        cordinates: "272,1103,296,1270,517,1237,491,1072"
+        name: "123 praktikum"
+        type: "class"
+        saved: 0
+      B-124:
+        cordinates: "515,460,528,578,619,574,621,640,734,638,736,460"
+        name: "124 wc z"
+        type: "wc"
+        saved: 0
+      B-125:
+        cordinates: "1593,463,1593,642,1699,642,1697,460"
+        name: "125 wc m"
+        type: "wc"
+        saved: 0
+      B-126:
+        cordinates: "1707,572,1711,638,1788,638,1786,568"
+        name: "126 vytah"
+        type: "others"
+        saved: 0
+      B-127:
+        cordinates: "530,584,540,640,612,640,614,582"
+        name: "127 vytah"
+        type: "others"
+        saved: 0
+  2.patro:
+    path: "./images/brehova/patro_2.jpg"
+    classes:
+      B-201:
+        cordinates: "1808,1251,1806,1452,2135,1454,2130,1247"
+        name: "201 praktikum KDAIZ"
+        type: "class"
+        saved: 0
+      B-202:
+        cordinates: "1903,1111,1903,1241,2126,1241,2124,1113"
+        name: "202 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-203:
+        cordinates: "1899,1004,1905,1101,2128,1105,2120,1006"
+        name: "203 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-204:
+        cordinates: "1893,723,1901,995,2122,995,2114,725"
+        name: "204 zastupce vedouciho katedry KDAIZ"
+        type: "important"
+        saved: 0
+      B-205:
+        cordinates: "1891,622,1895,714,2118,712,2116,626"
+        name: "205 tajemnik KDAIZ"
+        type: "important"
+        saved: 0
+      B-206:
+        cordinates: "1887,413,1889,613,2114,613,2108,413"
+        name: "206 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-207:
+        cordinates: "1885,287,1887,409,2108,403,2108,285"
+        name: "207 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-208:
+        cordinates: "1878,76,1885,275,2104,277,2102,56"
+        name: "208 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-209:
+        cordinates: "1874,198,1872,87,1783,97,1786,204"
+        name: "209 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-210:
+        cordinates: "1368,419,1368,638,1583,638,1579,417"
+        name: "210 pocitacova studovna"
+        type: "class"
+        saved: 0
+      B-211:
+        cordinates: "1071,421,1069,638,1358,638,1356,419"
+        name: "211 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-212:
+        cordinates: "846,421,846,638,1061,638,1061,421"
+        name: "212 vedouci katedry KDAIZ"
+        type: "important"
+        saved: 0
+      B-213:
+        cordinates: "743,463,738,638,838,640,838,456"
+        name: "213 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-214:
+        cordinates: "396,273,406,355,491,339,478,262"
+        name: "214 mechanicka dilna KF"
+        type: "class"
+        saved: 0
+      B-215:
+        cordinates: "164,306,191,510,414,481,385,275"
+        name: "215 ucebna"
+        type: "class"
+        saved: 0
+      B-216:
+        cordinates: "208,628,218,698,443,677,429,599"
+        name: "216 katedra KF"
+        type: "important"
+        saved: 0
+      B-217:
+        cordinates: "220,708,232,795,455,768,441,677"
+        name: "217 sekretariat KF"
+        type: "important"
+        saved: 0
+      B-218:
+        cordinates: "234,807,243,898,464,867,451,770"
+        name: "218 vedouci KF"
+        type: "important"
+        saved: 0
+      B-219:
+        cordinates: "247,904,272,1092,493,1061,468,876"
+        name: "219 katedra KF"
+        type: "important"
+        saved: 0
+      B-220:
+        cordinates: "274,1103,294,1268,517,1241,493,1070"
+        name: "220 katedra KF"
+        type: "important"
+        saved: 0
+      B-221:
+        cordinates: "294,1278,321,1450,629,1454,625,1245,519,1247"
+        name: "221 lab. experimentalni jaderne fyziky KF"
+        type: "class"
+        saved: 0
+      B-225:
+        cordinates: "623,636,730,640,734,463,617,454"
+        name: "225 wc z"
+        type: "wc"
+        saved: 0
+      B-226:
+        cordinates: "534,584,540,636,610,638,612,580"
+        name: "226 vytah"
+        type: "others"
+        saved: 0
+      B-227:
+        cordinates: "517,465,530,578,617,580,614,460"
+        name: "227 lab. filmove dozimetrie KDAIZ"
+        type: "class"
+        saved: 0
+      B-230:
+        cordinates: "1593,458,1595,638,1701,636,1697,456"
+        name: "230 wc m"
+        type: "wc"
+        saved: 0
+      B-231:
+        cordinates: "1709,570,1711,640,1788,638,1786,564"
+        name: "231 vytah"
+        type: "others"
+        saved: 0
+      B-232:
+        cordinates: "1707,460,1705,568,1786,560,1783,463"
+        name: "232 kuchynka"
+        type: "others"
+        saved: 0
+  3.patro:
+    path: "./images/brehova/patro_3.jpg"
+    classes:
+      B-301:
+        cordinates: "1808,1264,1812,1468,2132,1468,2130,1264"
+        name: "301 laborator"
+        type: "class"
+        saved: 0
+      B-302:
+        cordinates: "1907,1117,1909,1253,2128,1251,2126,1127"
+        name: "302 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-303:
+        cordinates: "1903,1018,1905,1117,2128,1117,2124,1016"
+        name: "303 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-304:
+        cordinates: "1897,735,1903,1010,2124,1012,2120,737"
+        name: "304 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-305:
+        cordinates: "1893,638,1897,729,2118,729,2122,636"
+        name: "305 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-306:
+        cordinates: "1891,427,1893,628,2118,628,2110,430"
+        name: "306 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-306a:
+        cordinates: "1889,299,1891,427,2112,419,2108,299"
+        name: "306a lab. KJCH"
+        type: "class"
+        saved: 0
+      B-307:
+        cordinates: "1881,95,1885,293,2110,289,2110,68"
+        name: "307 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-308:
+        cordinates: "1786,109,1788,219,1876,213,1874,99"
+        name: "308 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-309:
+        cordinates: "1372,432,1372,653,1587,653,1587,430"
+        name: "309 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-310:
+        cordinates: "1075,434,1077,653,1364,653,1362,432"
+        name: "310 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-311:
+        cordinates: "848,434,848,650,1067,650,1069,434"
+        name: "311 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-312:
+        cordinates: "747,475,743,650,842,650,842,477"
+        name: "312 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-312a:
+        cordinates: "625,653,736,650,736,479,621,471"
+        name: "312a wc z"
+        type: "wc"
+        saved: 0
+      B-313:
+        cordinates: "509,473,482,275,168,318,197,524,418,500,426,485"
+        name: "313 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-314:
+        cordinates: "212,640,247,913,470,882,431,607"
+        name: "314 poslucharna"
+        type: "class"
+        saved: 0
+      B-315:
+        cordinates: "249,921,276,1105,497,1078,472,890"
+        name: "315 sekretariat katedry KJCH"
+        type: "important"
+        saved: 0
+      B-316:
+        cordinates: "272,1117,301,1286,519,1255,497,1082"
+        name: "316 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-317:
+        cordinates: "298,1293,323,1464,635,1464,633,1264,524,1262"
+        name: "317 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-320:
+        cordinates: "519,475,532,591,619,591,619,473"
+        name: "320 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-321:
+        cordinates: "536,595,544,653,617,655,614,599"
+        name: "321 vytah"
+        type: "others"
+        saved: 0
+      B-324:
+        cordinates: "1595,473,1595,653,1703,653,1699,477"
+        name: "324 wc m"
+        type: "wc"
+        saved: 0
+      B-325:
+        cordinates: "1711,584,1715,650,1790,653,1790,578"
+        name: "325 vytah"
+        type: "others"
+        saved: 0
+  4.patro:
+    path: "./images/brehova/patro_4.jpg"
+    classes:
+      B-401:
+        cordinates: "798,427,792,648,1013,650,1011,427"
+        name: "401 lab KJCH"
+        type: "class"
+        saved: 0
+      B-402:
+        cordinates: "1017,427,1017,646,1308,648,1315,421"
+        name: "402 radiochemicke praktikum KJCH"
+        type: "class"
+        saved: 0
+      B-403:
+        cordinates: "1319,425,1315,646,1531,646,1529,423"
+        name: "403 lab KJCH"
+        type: "class"
+        saved: 0
+      B-407:
+        cordinates: "1538,591,1534,644,1565,644,1565,591"
+        name: "407 sprcha"
+        type: "wc"
+        saved: 0
+      B-408:
+        cordinates: "1538,500,1540,580,1573,582,1573,638,1626,640,1626,582,1697,578,1697,524,1647,522,1641,471,1600,471,1600,498"
+        name: "408 wc m"
+        type: "wc"
+        saved: 0
+      B-409:
+        cordinates: "1629,589,1633,636,1668,636,1666,586"
+        name: "409 uklid"
+        type: "wc"
+        saved: 0
+      B-410:
+        cordinates: "1672,589,1676,636,1730,634,1730,584"
+        name: "410 vytah"
+        type: "others"
+        saved: 0
+      B-411:
+        cordinates: "1705,526,1707,578,1734,580,1734,601,1856,599,1860,477,1732,485,1734,522"
+        name: "411 kotelna"
+        type: "others"
+        saved: 0
+      B-412:
+        cordinates: "1792,719,1860,717,1858,657,1790,659"
+        name: "412 kuchynka"
+        type: "others"
+        saved: 0
+      B-414:
+        cordinates: "1771,347,1769,382,1744,382,1746,436,1769,436,1775,475,1870,475,1868,347"
+        name: "414 pracovna"
+        type: "class"
+        saved: 0
+      B-415:
+        cordinates: "1916,332,1920,471,2060,473,2060,458,2081,456,2079,409,2060,409,2052,337"
+        name: "415 pracovna"
+        type: "class"
+        saved: 0
+      B-416:
+        cordinates: "1920,481,1922,593,2064,593,2062,566,2087,566,2085,510,2062,508,2058,479"
+        name: "416 pracovna"
+        type: "class"
+        saved: 0
+      B-417:
+        cordinates: "1926,712,2060,712,2062,681,2087,679,2085,628,2062,628,2058,601,1920,605"
+        name: "417 pracovna"
+        type: "class"
+        saved: 0
+      B-418:
+        cordinates: "1926,723,1928,838,2064,832,2066,803,2091,801,2089,750,2066,748,2064,721"
+        name: "418 pracovna"
+        type: "class"
+        saved: 0
+      B-419:
+        cordinates: "1932,956,2068,956,2068,921,2093,919,2091,871,2068,871,2068,842,1930,845"
+        name: "419 pracovna"
+        type: "class"
+        saved: 0
+      B-420:
+        cordinates: "1934,1076,2071,1076,2071,1041,2095,1041,2095,995,2071,995,2068,964,1932,964"
+        name: "420 pracovna"
+        type: "class"
+        saved: 0
+      B-421:
+        cordinates: "1949,1086,1951,1227,2073,1224,2073,1142,2097,1142,2097,1090,2073,1090,2073,1078"
+        name: "421 pracovna"
+        type: "class"
+        saved: 0
+      B-422:
+        cordinates: "1788,1088,1788,1233,1901,1229,1903,1163,1883,1163,1881,1086"
+        name: "422 pracovna"
+        type: "class"
+        saved: 0
+      B-423:
+        cordinates: "1783,966,1783,995,1757,997,1761,1051,1786,1051,1788,1080,1881,1078,1874,966"
+        name: "423 pracovna"
+        type: "class"
+        saved: 0
+      B-424:
+        cordinates: "1783,847,1781,878,1755,878,1757,931,1783,931,1783,960,1876,958,1872,845"
+        name: "424 pracovna"
+        type: "class"
+        saved: 0
+      B-425:
+        cordinates: "1779,725,1783,840,1874,838,1872,723"
+        name: "425 serverovna"
+        type: "others"
+        saved: 0
+      B-429:
+        cordinates: "654,514,654,646,784,646,786,512,716,514,714,485,676,487,676,514"
+        name: "429 pracovna"
+        type: "class"
+        saved: 0
+      B-430:
+        cordinates: "559,599,559,642,650,646,647,553,614,553,608,597"
+        name: "430 wc z"
+        type: "wc"
+        saved: 0
+      B-431:
+        cordinates: "499,593,499,644,550,642,552,591"
+        name: "431 vytah"
+        type: "others"
+        saved: 0
+      B-432:
+        cordinates: "437,547,435,578,449,578,449,640,491,640,495,584,532,580,530,549"
+        name: "432 sprcha + wc"
+        type: "wc"
+        saved: 0
+      B-433:
+        cordinates: "354,549,367,586,433,578,435,547"
+        name: "433 uklid"
+        type: "wc"
+        saved: 0
+      B-434:
+        cordinates: "379,733,389,805,470,797,462,721"
+        name: "434 pracovna"
+        type: "class"
+        saved: 0
+      B-437:
+        cordinates: "389,812,406,946,491,935,482,847,503,842,497,807,476,812,472,801"
+        name: "437 pracovna"
+        type: "class"
+        saved: 0
+      B-438:
+        cordinates: "408,950,493,937,497,950,515,948,522,979,501,983,513,1072,426,1084"
+        name: "438 pracovna"
+        type: "class"
+        saved: 0
+      B-439:
+        cordinates: "424,1088,445,1229,526,1216,517,1119,538,1117,532,1084,513,1086,509,1076"
+        name: "439 pracovna"
+        type: "class"
+        saved: 0
+      B-440:
+        cordinates: "241,1111,243,1125,220,1130,228,1160,247,1158,265,1251,391,1235,371,1096"
+        name: "440 pracovna"
+        type: "class"
+        saved: 0
+      B-441:
+        cordinates: "369,1088,241,1107,234,1055,212,1057,208,1026,230,1022,222,975,354,958"
+        name: "441 pracovna"
+        type: "class"
+        saved: 0
+      B-442:
+        cordinates: "203,836,208,886,187,888,195,923,214,921,222,968,354,950,334,818"
+        name: "442 pracovna"
+        type: "class"
+        saved: 0
+      B-443:
+        cordinates: "315,681,183,698,191,748,166,750,172,785,195,783,201,832,334,812"
+        name: "443 pracovna"
+        type: "class"
+        saved: 0
+      B-444:
+        cordinates: "175,619,179,653,154,657,160,692,181,688,183,696,315,675,307,601"
+        name: "444 pracovna"
+        type: "class"
+        saved: 0
+      B-446:
+        cordinates: "216,1266,255,1499,579,1495,577,1282,571,1216"
+        name: "446 puda"
+        type: "others"
+        saved: 0
+      B-447:
+        cordinates: "92,314,119,520,451,479,420,266"
+        name: "447 puda"
+        type: "others"
+        saved: 0
+      B-448:
+        cordinates: "1736,97,1740,281,1765,283,1771,339,1866,343,1862,297,1912,293,1914,328,2050,324,2054,281,2068,283,2064,52"
+        name: "448 puda"
+        type: "others"
+        saved: 0
+      B-449:
+        cordinates: "1779,1243,1786,1505,2097,1497,2087,1231"
+        name: "449 puda"
+        type: "others"
+        saved: 0

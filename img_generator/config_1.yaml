@@ -1,0 +1,134 @@
+Brehova:
+  1.patro:
+    path: "./images/brehova/patro_1.jpg"
+    classes:
+      B-101:
+        cordinates: "296,1280,319,1450,627,1450,631,1251,517,1245"
+        name: "101 praktikum"
+        type: "class"
+        saved: 0
+      B-102:
+        cordinates: "639,1251,641,1452,902,1450,904,1251"
+        name: "102 praktikum"
+        type: "class"
+        saved: 0
+      B-103:
+        cordinates: "912,1249,916,1592,1527,1590,1534,1249"
+        name: "103 poslucharna"
+        type: "class"
+        saved: 0
+      B-105:
+        cordinates: "1534,1249,1536,1456,1660,1452,1662,1251"
+        name: "105 pokladna, majetek"
+        type: "important"
+        saved: 0
+      B-106:
+        cordinates: "1672,1251,1672,1452,1796,1454,1804,1247"
+        name: "106 mzdova úcetni"
+        type: "important"
+        saved: 0
+      B-107:
+        cordinates: "1808,1251,1808,1458,2130,1452,2130,1245"
+        name: "107 personalni odděleni"
+        type: "important"
+        saved: 0
+      B-108:
+        cordinates: "1905,1028,2124,1022,2128,1239,1912,1243"
+        name: "108 děkan"
+        type: "important"
+        saved: 0
+      B-109:
+        cordinates: "1897,745,1905,1022,2122,1014,2114,739"
+        name: "109 tajemnik"
+        type: "important"
+        saved: 0
+      B-110:
+        cordinates: "1893,634,1897,735,2120,733,2118,628"
+        name: "110 financni úctarna"
+        type: "important"
+        saved: 0
+      B-111:
+        cordinates: "1885,310,1893,626,2120,622,2108,306"
+        name: "111 zasedaci mistnost"
+        type: "important"
+        saved: 0
+      B-112:
+        cordinates: "1878,83,1885,301,2106,299,2102,56"
+        name: "112 proděkan"
+        type: "important"
+        saved: 0
+      B-112a:
+        cordinates: "1781,97,1786,202,1876,200,1872,83"
+        name: "112a věda, vyzkum, zahranicni styky"
+        type: "important"
+        saved: 0
+      B-113:
+        cordinates: "1707,460,1709,564,1786,564,1786,460"
+        name: "113 kuchynka"
+        type: "others"
+        saved: 0
+      B-114:
+        cordinates: "1368,417,1368,638,1589,638,1583,419"
+        name: "114 poslucharna"
+        type: "class"
+        saved: 0
+      B-115:
+        cordinates: "1073,419,1071,636,1364,640,1362,417"
+        name: "115 poslucharna"
+        type: "class"
+        saved: 0
+      B-116:
+        cordinates: "850,419,844,642,1063,638,1061,419"
+        name: "116 pracovna"
+        type: "class"
+        saved: 0
+      B-117:
+        cordinates: "743,463,740,638,838,638,840,463"
+        name: "117 pracovna"
+        type: "class"
+        saved: 0
+      B-119:
+        cordinates: "393,273,406,357,488,343,480,258"
+        name: "119 kabinet KF"
+        type: "important"
+        saved: 0
+      B-120:
+        cordinates: "164,301,195,514,414,481,385,273"
+        name: "120 pracovna KF"
+        type: "class"
+        saved: 0
+      B-121:
+        cordinates: "210,628,245,898,466,867,429,599"
+        name: "121 lab. KF"
+        type: "important"
+        saved: 0
+      B-122:
+        cordinates: "245,906,272,1096,493,1061,466,876"
+        name: "122 praktikum"
+        type: "class"
+        saved: 0
+      B-123:
+        cordinates: "272,1103,296,1270,517,1237,491,1072"
+        name: "123 praktikum"
+        type: "class"
+        saved: 0
+      B-124:
+        cordinates: "515,460,528,578,619,574,621,640,734,638,736,460"
+        name: "124 wc z"
+        type: "wc"
+        saved: 0
+      B-125:
+        cordinates: "1593,463,1593,642,1699,642,1697,460"
+        name: "125 wc m"
+        type: "wc"
+        saved: 0
+      B-126:
+        cordinates: "1707,572,1711,638,1788,638,1786,568"
+        name: "126 vytah"
+        type: "others"
+        saved: 0
+      B-127:
+        cordinates: "530,584,540,640,612,640,614,582"
+        name: "127 vytah"
+        type: "others"
+        saved: 0

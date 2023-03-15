@@ -1,0 +1,119 @@
+Brehova:
+  3.patro:
+    path: "./images/brehova/patro_3.jpg"
+    classes:
+      B-301:
+        cordinates: "1808,1264,1812,1468,2132,1468,2130,1264"
+        name: "301 laborator"
+        type: "class"
+        saved: 0
+      B-302:
+        cordinates: "1907,1117,1909,1253,2128,1251,2126,1127"
+        name: "302 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-303:
+        cordinates: "1903,1018,1905,1117,2128,1117,2124,1016"
+        name: "303 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-304:
+        cordinates: "1897,735,1903,1010,2124,1012,2120,737"
+        name: "304 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-305:
+        cordinates: "1893,638,1897,729,2118,729,2122,636"
+        name: "305 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-306:
+        cordinates: "1891,427,1893,628,2118,628,2110,430"
+        name: "306 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-306a:
+        cordinates: "1889,299,1891,427,2112,419,2108,299"
+        name: "306a lab. KJCH"
+        type: "class"
+        saved: 0
+      B-307:
+        cordinates: "1881,95,1885,293,2110,289,2110,68"
+        name: "307 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-308:
+        cordinates: "1786,109,1788,219,1876,213,1874,99"
+        name: "308 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-309:
+        cordinates: "1372,432,1372,653,1587,653,1587,430"
+        name: "309 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-310:
+        cordinates: "1075,434,1077,653,1364,653,1362,432"
+        name: "310 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-311:
+        cordinates: "848,434,848,650,1067,650,1069,434"
+        name: "311 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-312:
+        cordinates: "747,475,743,650,842,650,842,477"
+        name: "312 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-312a:
+        cordinates: "625,653,736,650,736,479,621,471"
+        name: "312a wc z"
+        type: "wc"
+        saved: 0
+      B-313:
+        cordinates: "509,473,482,275,168,318,197,524,418,500,426,485"
+        name: "313 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-314:
+        cordinates: "212,640,247,913,470,882,431,607"
+        name: "314 poslucharna"
+        type: "class"
+        saved: 0
+      B-315:
+        cordinates: "249,921,276,1105,497,1078,472,890"
+        name: "315 sekretariat katedry KJCH"
+        type: "important"
+        saved: 0
+      B-316:
+        cordinates: "272,1117,301,1286,519,1255,497,1082"
+        name: "316 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-317:
+        cordinates: "298,1293,323,1464,635,1464,633,1264,524,1262"
+        name: "317 lab. KJCH"
+        type: "class"
+        saved: 0
+      B-320:
+        cordinates: "519,475,532,591,619,591,619,473"
+        name: "320 katedra KJCH"
+        type: "important"
+        saved: 0
+      B-321:
+        cordinates: "536,595,544,653,617,655,614,599"
+        name: "321 vytah"
+        type: "others"
+        saved: 0
+      B-324:
+        cordinates: "1595,473,1595,653,1703,653,1699,477"
+        name: "324 wc m"
+        type: "wc"
+        saved: 0
+      B-325:
+        cordinates: "1711,584,1715,650,1790,653,1790,578"
+        name: "325 vytah"
+        type: "others"
+        saved: 0

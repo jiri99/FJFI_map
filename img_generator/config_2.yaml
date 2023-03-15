@@ -1,0 +1,139 @@
+Brehova:
+  2.patro:
+    path: "./images/brehova/patro_2.jpg"
+    classes:
+      B-201:
+        cordinates: "1808,1251,1806,1452,2135,1454,2130,1247"
+        name: "201 praktikum KDAIZ"
+        type: "class"
+        saved: 0
+      B-202:
+        cordinates: "1903,1111,1903,1241,2126,1241,2124,1113"
+        name: "202 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-203:
+        cordinates: "1899,1004,1905,1101,2128,1105,2120,1006"
+        name: "203 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-204:
+        cordinates: "1893,723,1901,995,2122,995,2114,725"
+        name: "204 zastupce vedouciho katedry KDAIZ"
+        type: "important"
+        saved: 0
+      B-205:
+        cordinates: "1891,622,1895,714,2118,712,2116,626"
+        name: "205 tajemnik KDAIZ"
+        type: "important"
+        saved: 0
+      B-206:
+        cordinates: "1887,413,1889,613,2114,613,2108,413"
+        name: "206 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-207:
+        cordinates: "1885,287,1887,409,2108,403,2108,285"
+        name: "207 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-208:
+        cordinates: "1878,76,1885,275,2104,277,2102,56"
+        name: "208 lab. KDAIZ"
+        type: "class"
+        saved: 0
+      B-209:
+        cordinates: "1874,198,1872,87,1783,97,1786,204"
+        name: "209 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-210:
+        cordinates: "1368,419,1368,638,1583,638,1579,417"
+        name: "210 pocitacova studovna"
+        type: "class"
+        saved: 0
+      B-211:
+        cordinates: "1071,421,1069,638,1358,638,1356,419"
+        name: "211 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-212:
+        cordinates: "846,421,846,638,1061,638,1061,421"
+        name: "212 vedouci katedry KDAIZ"
+        type: "important"
+        saved: 0
+      B-213:
+        cordinates: "743,463,738,638,838,640,838,456"
+        name: "213 katedra KDAIZ"
+        type: "important"
+        saved: 0
+      B-214:
+        cordinates: "396,273,406,355,491,339,478,262"
+        name: "214 mechanicka dilna KF"
+        type: "class"
+        saved: 0
+      B-215:
+        cordinates: "164,306,191,510,414,481,385,275"
+        name: "215 ucebna"
+        type: "class"
+        saved: 0
+      B-216:
+        cordinates: "208,628,218,698,443,677,429,599"
+        name: "216 katedra KF"
+        type: "important"
+        saved: 0
+      B-217:
+        cordinates: "220,708,232,795,455,768,441,677"
+        name: "217 sekretariat KF"
+        type: "important"
+        saved: 0
+      B-218:
+        cordinates: "234,807,243,898,464,867,451,770"
+        name: "218 vedouci KF"
+        type: "important"
+        saved: 0
+      B-219:
+        cordinates: "247,904,272,1092,493,1061,468,876"
+        name: "219 katedra KF"
+        type: "important"
+        saved: 0
+      B-220:
+        cordinates: "274,1103,294,1268,517,1241,493,1070"
+        name: "220 katedra KF"
+        type: "important"
+        saved: 0
+      B-221:
+        cordinates: "294,1278,321,1450,629,1454,625,1245,519,1247"
+        name: "221 lab. experimentalni jaderne fyziky KF"
+        type: "class"
+        saved: 0
+      B-225:
+        cordinates: "623,636,730,640,734,463,617,454"
+        name: "225 wc z"
+        type: "wc"
+        saved: 0
+      B-226:
+        cordinates: "534,584,540,636,610,638,612,580"
+        name: "226 vytah"
+        type: "others"
+        saved: 0
+      B-227:
+        cordinates: "517,465,530,578,617,580,614,460"
+        name: "227 lab. filmove dozimetrie KDAIZ"
+        type: "class"
+        saved: 0
+      B-230:
+        cordinates: "1593,458,1595,638,1701,636,1697,456"
+        name: "230 wc m"
+        type: "wc"
+        saved: 0
+      B-231:
+        cordinates: "1709,570,1711,640,1788,638,1786,564"
+        name: "231 vytah"
+        type: "others"
+        saved: 0
+      B-232:
+        cordinates: "1707,460,1705,568,1786,560,1783,463"
+        name: "232 kuchynka"
+        type: "others"
+        saved: 0

@@ -4,6 +4,7 @@ Created on Fri Nov 25 10:59:52 2022
 
 @author: jiri.nabelek
 """
+import os, sys
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -14,9 +15,10 @@ from fill_database import insert_into_database_room, insert_into_database_roomty
 from img_generator import generate_image
 
 img_output_path = "./../develop/db_images/"
-config_path = "./config.yaml"
+img_output_path_db = "develop/db_images/"
+config_path = "./config_all.yaml"
 config_path_out = "./config_out.yaml"
-id_counter = 18
+id_counter = 1
 
 with open(config_path) as f:
     data = yaml.load(f, Loader=yaml.FullLoader)
@@ -31,7 +33,16 @@ for building in list(data.keys()):
             if(not data[building][floor]["classes"][room]["cordinates"] == ""):
                 if(data[building][floor]["classes"][room]["saved"] == 0):
                     generate_image(data[building][floor]["img"], data[building][floor]["classes"][room], room, img_output_path)
-                    insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 1, img_output_path + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
+                    if("0" in floor):
+                        insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 5, img_output_path_db + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
+                    elif("1" in floor):
+                        insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 1, img_output_path_db + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
+                    elif("2" in floor):
+                        insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 2, img_output_path_db + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
+                    elif("3" in floor):
+                        insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 3, img_output_path_db + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])
+                    else:
+                        insert_into_database_room(id_counter, data[building][floor]["classes"][room]["name"], "", 4, img_output_path_db + room + ".jpg", data[building][floor]["classes"][room]["cordinates"])                        
                     if(data[building][floor]["classes"][room]["type"] == "class"):
                         insert_into_database_roomtype(id_counter, id_counter, 2)
                     elif(data[building][floor]["classes"][room]["type"] == "important"):

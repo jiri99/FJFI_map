@@ -4,6 +4,7 @@ Created on Sun Mar 12 20:02:26 2023
 
 @author: jiri.nabelek
 """
+import os, sys
 import numpy as np
 import math
 import matplotlib.pyplot as plt
@@ -41,13 +42,13 @@ def insert_into_database_roomtype(id, id_room, id_type):
         # print("Connected to SQLite")
 
         sqlite_insert_with_param = """INSERT INTO develop_room_room_type
-                          (id, id_room, id_type) 
+                          (id, room_id, room_type_id) 
                           VALUES (?, ?, ?);"""
 
         data_tuple = (id, id_room, id_type)
         cursor.execute(sqlite_insert_with_param, data_tuple)
         sqliteConnection.commit()
-        print(id_room + " inserted successfully into database")
+        print(str(id_room) + " inserted successfully into database")
 
         cursor.close()
 

@@ -4,13 +4,13 @@ Created on Fri Nov 25 10:59:52 2022
 
 @author: jiri.nabelek
 """
+import os, sys
 import numpy as np
 import math
 import matplotlib.pyplot as plt
 from PIL import Image, ImageColor
 import cv2
 import yaml
-from fill_database import inser_into_database
 
 
 def display(img):
@@ -54,10 +54,10 @@ def cropp(img, cordinates, x_size = 300, y_size = 300):
     if(y_up < 0):
         y_up = 0
     
-    if(x_down > img.shape[0]):
-        x_up = img.shape[0]
-    if(y_down > img.shape[1]):
-        y_up = img.shape[1]
+    if(x_down > img.size[0]):
+        x_up = img.size[0]
+    if(y_down > img.size[1]):
+        y_up = img.size[1]
     
     
     cropped_img = img.crop((x_up, y_up, x_down, y_down))
