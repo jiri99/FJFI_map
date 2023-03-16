@@ -2,8 +2,33 @@ Brehova:
   1.patro:
     path: "./images/brehova/patro_1.jpg"
     classes:
-      B-103:
-        cordinates: "912,1249,916,1592,1527,1590,1534,1249"
-        name: "103 poslucharna"
+      B-102:
+        cordinates: "633,1245,633,1454,908,1454,910,1245"
+        name: "102 praktikum"
         type: "class"
+        saved: 0
+      B-108:
+        cordinates: "1901,1024,1905,1243,2130,1243,2124,1016"
+        name: "108 dekan"
+        type: "important"
+        saved: 0
+      B-113:
+        cordinates: "1701,456,1703,564,1790,564,1786,454"
+        name: "113 kuchynka"
+        type: "others"
+        saved: 0
+      B-121:
+        cordinates: "203,624,241,904,470,871,433,593"
+        name: "121 lab. KF"
+        type: "important"
+        saved: 0
+      B-125:
+        cordinates: "1587,454,1587,642,1703,642,1699,454"
+        name: "125 wc m"
+        type: "wc"
+        saved: 0
+      B-126:
+        cordinates: "1703,566,1705,642,1792,642,1790,566"
+        name: "126 vytah"
+        type: "others"
         saved: 0
