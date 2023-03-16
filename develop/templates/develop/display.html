@@ -40,7 +40,7 @@
             <div class="row top-buffer">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <h1 class="floor_text text-left"> {{floor.name}} </h1>
-                    <img class="floor_img" src="{{MEDIA_URL}}{{floor.image.url}}" usemap="#map{{floor.id}}"/>
+                    <img class="floor_img map" src="{{MEDIA_URL}}{{floor.image.url}}" usemap="#map{{floor.id}}"/>
                     <map name="map{{floor.id}}">
                         {% for room in object_room %}
                             {% if room.floor.id == floor.id %}
@@ -84,36 +84,23 @@
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('resize', function (event) {
-            var newWidth = window.innerWidth;
-            if (newWidth > 767) {
-                displayNav(newWidth);
-            }
-            else {
-                closeNav();
-            }
+    <script type="text/javascript" src="{% static '/develop/js/imageMapResizer.js' %}"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+            $('map').imageMapResize();
         });
-
-        function openNav() {
-            var newWidth = window.innerWidth;
-            if (newWidth > 767) {
-                displayNav(newWidth);
-            }
-            else {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-        }
-
-        function displayNav(newWidth) {
-            document.getElementById("mySidenav").style.width = "20vw";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+	</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+          var data = {};
+          $('.map').maphilight();
+          data.fillColor = '808080';
+          data.stroke = false;
+          data.fillOpacity = '0.6';
+          $('area[alt=""]').data('maphilight', data).trigger('alwaysOn.maphilight');
+        });
     </script>
-
 </body>
 
 </html>

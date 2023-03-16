@@ -1,0 +1,9 @@
+Brehova:
+  1.patro:
+    path: "./images/brehova/patro_1.jpg"
+    classes:
+      B-103:
+        cordinates: "912,1249,916,1592,1527,1590,1534,1249"
+        name: "103 poslucharna"
+        type: "class"
+        saved: 0

@@ -13,18 +13,20 @@
 
 <body>
     <div class="col-md-6 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-3">
-        <div class="row top-buffer">
-            <div class="col-md-2 col-sm-2 col-xs-2">
-                <a href="{% url 'homepage' %}">
-                    <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
-                </a>
-            </div>
-            <div class="col-md-10 col-sm-10 col-xs-10">
-                <button type="button" class="btn btn-category btn-square-md room_title"> {{room.name}} </button>
+        <div class="row top-buffer_extendededed">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a href="{% url 'homepage' %}">
+                        <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
+                    </a>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <button type="button" class="btn btn-category btn-square-md room_title"> {{room.name}} </button>
+                </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="top-buffer_extended">
-                    <img class="floor_img" src="{{MEDIA_URL}}{{room.image.url}}" />
+                    <img class="room_img" src="{{MEDIA_URL}}{{room.image.url}}" />
                 </div>
             </div>
         </div>

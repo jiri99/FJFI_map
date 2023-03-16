@@ -40,7 +40,7 @@ def shadow_area(image_floor, cordinates):
     img = Image.fromarray(im)
     return img
 
-def cropp(img, cordinates, x_size = 300, y_size = 300):
+def cropp(img, cordinates, x_size, y_size):
     x_middle = np.mean(cordinates[:,0])
     y_middle = np.mean(cordinates[:,1])
     
@@ -55,18 +55,18 @@ def cropp(img, cordinates, x_size = 300, y_size = 300):
         y_up = 0
     
     if(x_down > img.size[0]):
-        x_up = img.size[0]
+        x_down = img.size[0]
     if(y_down > img.size[1]):
-        y_up = img.size[1]
+        y_down = img.size[1]
     
     
     cropped_img = img.crop((x_up, y_up, x_down, y_down))
     return cropped_img
 
-def generate_image(image_floor, room_data, room_name, img_output_path):
+def generate_image(image_floor, room_data, room_name, img_output_path, x_size = 300, y_size = 300):
     cordinates = prerocess_cordinates(room_data["cordinates"])
     img = shadow_area(image_floor, cordinates)
-    image = cropp(img, cordinates)
+    image = cropp(img, cordinates, x_size, y_size)
     display(image)
     image.save(img_output_path + room_name + ".jpg")
     
