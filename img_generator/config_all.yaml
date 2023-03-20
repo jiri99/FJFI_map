@@ -1,4 +1,202 @@
 Brehova:
+  -1.patro:
+    path: "./images/brehova/suteren.jpg"
+    classes:
+      B-s101:
+        cordinates: "83,301,96,414,327,382,312,268"
+        name: "s101 sklad"
+        type: "wc"
+        saved: 0
+      B-s102:
+        cordinates: "98,413,112,516,341,487,327,382"
+        name: "s102 akumulatorna tokamaku"
+        type: "wc"
+        saved: 0
+      B-s104:
+        cordinates: "112,516,125,624,321,596,314,544,176,562,170,510"
+        name: "s104 sklad"
+        type: "wc"
+        saved: 0
+      B-s105:
+        cordinates: "125,624,164,905,395,874,354,593"
+        name: "s105 dilna"
+        type: "wc"
+        saved: 0
+      B-s106:
+        cordinates: "164,904,189,1101,418,1068,395,873"
+        name: "s106 laborator KF"
+        type: "wc"
+        saved: 0
+      B-s109:
+        cordinates: "189,1100,213,1276,444,1245,418,1067"
+        name: "s109 predsin"
+        type: "wc"
+        saved: 0
+      B-s111:
+        cordinates: "213,1276,238,1458,556,1458,556,1247,444,1245"
+        name: "s111 sklad"
+        type: "wc"
+        saved: 0
+      B-s112:
+        cordinates: "556,1248,556,1458,702,1458,700,1248"
+        name: "s112 laborator KF"
+        type: "wc"
+        saved: 0
+      B-s113:
+        cordinates: "700,1247,702,1457,832,1457,832,1247"
+        name: "s113 lab. KF"
+        type: "wc"
+        saved: 0
+      B-s114:
+        cordinates: "832,1247,832,1596,981,1596,981,1245"
+        name: "s114 sklad"
+        type: "wc"
+        saved: 0
+      B-s115:
+        cordinates: "981,1246,981,1597,1307,1597,1307,1492,1208,1492,1210,1248"
+        name: "s115 strojovna vzduchotechniky"
+        type: "wc"
+        saved: 0
+      B-s117:
+        cordinates: "1210,1248,1208,1494,1307,1494,1309,1248"
+        name: "s117 sklad"
+        type: "wc"
+        saved: 0
+      B-s118:
+        cordinates: "1309,1248,1307,1597,1451,1597,1451,1248"
+        name: "s118 sklad chemikalii"
+        type: "wc"
+        saved: 0
+      B-s120:
+        cordinates: "1451,1247,1451,1460,1726,1460,1726,1245"
+        name: "s120 serverovna"
+        type: "wc"
+        saved: 0
+      B-s121:
+        cordinates: "1726,1246,1726,1459,2058,1457,2054,1246"
+        name: "s121 fakultni archiv"
+        type: "wc"
+        saved: 0
+      B-s122:
+        cordinates: "1825,1108,1827,1246,2054,1246,2048,1103"
+        name: "s122 sklad"
+        type: "wc"
+        saved: 0
+      B-s123:
+        cordinates: "1823,1028,1825,1110,2050,1104,2050,1022"
+        name: "s123 satna"
+        type: "wc"
+        saved: 0
+      B-s124:
+        cordinates: "1813,741,1823,1028,2050,1022,2042,735"
+        name: "s124 archiv knihovny"
+        type: "wc"
+        saved: 0
+      B-s125:
+        cordinates: "1808,537,1813,741,2042,737,2038,531"
+        name: "s125 lab. KJCH"
+        type: "wc"
+        saved: 0
+      B-s128:
+        cordinates: "2027,49,2038,530,1808,536,1796,78"
+        name: "s128 sklad"
+        type: "wc"
+        saved: 0
+      B-s129:
+        cordinates: "1699,92,1794,79,1800,296,1705,298"
+        name: "s129 kotelna"
+        type: "wc"
+        saved: 0
+      B-s132:
+        cordinates: ""
+        name: "s132 vytah"
+        type: "wc"
+        saved: 0
+      B-s134:
+        cordinates: ""
+        name: "s134 kotelna"
+        type: "wc"
+        saved: 0
+      B-s135:
+        cordinates: ""
+        name: "s135 kotelna"
+        type: "wc"
+        saved: 0
+      B-s136:
+        cordinates: ""
+        name: "s136 kotelna"
+        type: "wc"
+        saved: 0
+      B-s137:
+        cordinates: ""
+        name: "s137 kotelna"
+        type: "wc"
+        saved: 0
+      B-s138:
+        cordinates: ""
+        name: "s138 kotelna"
+        type: "wc"
+        saved: 0
+      B-s139:
+        cordinates: ""
+        name: "s139 kotelna"
+        type: "wc"
+        saved: 0
+      B-s140:
+        cordinates: ""
+        name: "s140 kotelna"
+        type: "wc"
+        saved: 0
+      B-s141:
+        cordinates: ""
+        name: "s141 kotelna"
+        type: "wc"
+        saved: 0
+      B-s142:
+        cordinates: ""
+        name: "s142 kotelna"
+        type: "wc"
+        saved: 0
+      B-s143:
+        cordinates: ""
+        name: "s143 kotelna"
+        type: "wc"
+        saved: 0
+      B-s144:
+        cordinates: ""
+        name: "s144 kotelna"
+        type: "wc"
+        saved: 0
+      B-s145:
+        cordinates: ""
+        name: "s145 kotelna"
+        type: "wc"
+        saved: 0
+      B-s146:
+        cordinates: ""
+        name: "s146 wc invalid"
+        type: "wc"
+        saved: 0
+      B-s152:
+        cordinates: ""
+        name: "s152 sklad"
+        type: "wc"
+        saved: 0
+      B-s153:
+        cordinates: ""
+        name: "s153 sklad"
+        type: "wc"
+        saved: 0
+      B-s155:
+        cordinates: ""
+        name: "s155 knihovna"
+        type: "wc"
+        saved: 0
+      B-s156:
+        cordinates: ""
+        name: "s156 studovna"
+        type: "wc"
+        saved: 0
   0.patro:
     path: "./images/brehova/prizemi.jpg"
     classes:
