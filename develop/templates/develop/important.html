@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/static/develop/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{% static '/develop/js/functions.js' %}"></script>
     <link rel="stylesheet" href="{% static '/develop/css/styles.css' %}">
 </head>
 
@@ -17,9 +18,7 @@
         <div class="row top-buffer_extendededed">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <a href="{% url 'homepage' %}">
-                        <button type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
-                    </a>
+                    <button onclick="back()" type="button" class="btn btn-menu btn-square-md" onclick="openNav()"><</button>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8">
                     <button type="button" class="btn btn-category btn-square-md">Důležité</button>
@@ -29,6 +28,7 @@
         <div class="row top-buffer_extendededed">        
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="list">
+                    <hr class="solid">
                     {% for room in rooms %}
                         <p>
                             <a href="{% url 'room_detail' room.id %}">{{room.name}}</a>

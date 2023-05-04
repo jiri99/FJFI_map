@@ -36,10 +36,12 @@
             <div class="col-md-8 offset-md-2">
                 {% if searched %}
                     {% for room in results %}
-                        <a href="{% url 'room_detail' room.id %}">
+                        <hr class="search">
+                        <a class="search" href="{% url 'room_detail' room.id %}">
                             <h3>{{room.name}}</h3>
                         </a>
                     {% endfor %}
+                    <hr class="search">
                 {% else %}
                     <h3>No results found.</h3>
                 {% endif %}
