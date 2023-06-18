@@ -269,6 +269,20 @@ li {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.header_text_long {
+    margin-top: 30px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .header_menu_link {
     font-family: 'Ubuntu';
     font-style: normal;
